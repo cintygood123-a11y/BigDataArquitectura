@@ -1,0 +1,2081 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.01kB done
+#1 DONE 0.0s
+
+#2 [mysql internal] load build definition from Dockerfile
+#2 transferring dockerfile: 285B done
+#2 DONE 0.0s
+
+#3 [datanode internal] load build definition from Dockerfile
+#3 transferring dockerfile: 494B done
+#3 DONE 0.0s
+
+#4 [jupyter internal] load build definition from Dockerfile
+#4 transferring dockerfile: 285B done
+#4 DONE 0.1s
+
+#5 [auth] library/mysql:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#6 [auth] bde2020/hadoop-datanode:pull token for registry-1.docker.io
+#6 DONE 0.0s
+
+#7 [auth] library/python:pull token for registry-1.docker.io
+#7 DONE 0.0s
+
+#8 [jupyter internal] load metadata for docker.io/library/python:3.9
+#8 ...
+
+#9 [datanode internal] load metadata for docker.io/bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8
+#9 DONE 0.3s
+
+#10 [datanode internal] load .dockerignore
+#10 transferring context: 2B done
+#10 DONE 0.0s
+
+#8 [jupyter internal] load metadata for docker.io/library/python:3.9
+#8 DONE 0.4s
+
+#11 [datanode 1/6] FROM docker.io/bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8@sha256:5623fca5e36d890983cdc6cfd29744d1d65476528117975b3af6a80d99b3c62f
+#11 resolve docker.io/bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8@sha256:5623fca5e36d890983cdc6cfd29744d1d65476528117975b3af6a80d99b3c62f 0.0s done
+#11 ...
+
+#12 [datanode internal] load build context
+#12 transferring context: 1.39MB 0.0s done
+#12 DONE 0.1s
+
+#13 [mysql internal] load metadata for docker.io/library/mysql:latest
+#13 DONE 0.4s
+
+#14 [jupyter internal] load .dockerignore
+#14 transferring context: 2B done
+#14 DONE 0.1s
+
+#15 [mysql internal] load .dockerignore
+#15 transferring context: 2B done
+#15 DONE 0.0s
+
+#11 [datanode 1/6] FROM docker.io/bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8@sha256:5623fca5e36d890983cdc6cfd29744d1d65476528117975b3af6a80d99b3c62f
+#11 sha256:5623fca5e36d890983cdc6cfd29744d1d65476528117975b3af6a80d99b3c62f 3.66kB / 3.66kB done
+#11 sha256:d96116df9f4686f69f4db4523607e52abd939ff4103ec39af164fbc583888a99 11.57kB / 11.57kB done
+#11 extracting sha256:aa0d7d66f7cf1e2827eeefc59c34bf523da1c17d08f74db6e7632537f7aae4da done
+#11 sha256:aa0d7d66f7cf1e2827eeefc59c34bf523da1c17d08f74db6e7632537f7aae4da 132B / 132B 0.2s done
+#11 sha256:0946aa10470887fcb86e440c2a189c8ec1206b3e679daa1be8bf7b9f5f859d8a 277B / 277B 0.2s done
+#11 sha256:34cf2f4935f0ef763bc702c34ec053ee87ec1f21d3b2ad2a90266120b03cb39d 277B / 277B 0.3s
+#11 ...
+
+#16 [mysql internal] load build context
+#16 transferring context: 10.31MB 0.1s done
+#16 DONE 0.2s
+
+#11 [datanode 1/6] FROM docker.io/bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8@sha256:5623fca5e36d890983cdc6cfd29744d1d65476528117975b3af6a80d99b3c62f
+#11 sha256:34cf2f4935f0ef763bc702c34ec053ee87ec1f21d3b2ad2a90266120b03cb39d 277B / 277B 0.3s done
+#11 extracting sha256:0946aa10470887fcb86e440c2a189c8ec1206b3e679daa1be8bf7b9f5f859d8a done
+#11 extracting sha256:34cf2f4935f0ef763bc702c34ec053ee87ec1f21d3b2ad2a90266120b03cb39d done
+#11 ...
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 resolve docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232 0.0s done
+#17 sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232 10.30kB / 10.30kB done
+#17 sha256:239b4550132def691be5e1bc8908f5c291d3581543c1ecca3359412a0b6aef0b 6.14kB / 6.14kB done
+#17 sha256:ebd2d7f6924ca907ad215766aedad3677946f9ae40c1eb70d69e73abf6dfed42 2.32kB / 2.32kB done
+#17 sha256:15b1d8a5ff03aeb0f14c8d39a60a73ef22f656550bfa1bb90d1850f25a0ac0fa 49.28MB / 49.28MB 4.3s
+#17 sha256:22718812f617084a0c5e539e02723b75bf79ea2a589430f820efcbb07f45b91b 25.61MB / 25.61MB 0.6s done
+#17 sha256:401a98f7495bee3e8e6943da9f52f0ab1043c43eb1d107a3817fc2a4b916be97 67.78MB / 67.78MB 5.1s
+#17 sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 235.91MB / 235.91MB 5.1s
+#17 sha256:15b1d8a5ff03aeb0f14c8d39a60a73ef22f656550bfa1bb90d1850f25a0ac0fa 49.28MB / 49.28MB 4.3s done
+#17 sha256:401a98f7495bee3e8e6943da9f52f0ab1043c43eb1d107a3817fc2a4b916be97 67.78MB / 67.78MB 5.5s done
+#17 sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 235.91MB / 235.91MB 5.5s done
+#17 sha256:b1cb890d7a544c46a696abe0ef8b127978755da915396f9e212da85d0a8c61e1 0B / 249B 5.6s
+#17 sha256:2dfb635db596dd5eb4f27fbc082f86f54831b958744199e9d2227892112b745b 0B / 19.86MB 5.6s
+#17 sha256:b1cb890d7a544c46a696abe0ef8b127978755da915396f9e212da85d0a8c61e1 249B / 249B 5.6s done
+#17 sha256:2dfb635db596dd5eb4f27fbc082f86f54831b958744199e9d2227892112b745b 15.50MB / 19.86MB 5.7s
+#17 extracting sha256:15b1d8a5ff03aeb0f14c8d39a60a73ef22f656550bfa1bb90d1850f25a0ac0fa
+#17 sha256:93e46ac5a04b1d62f916f18b74d9b8806cdf9d9c8ad44c45bad4a079d3c9ffef 5.13MB / 6.08MB 5.7s
+#17 sha256:2dfb635db596dd5eb4f27fbc082f86f54831b958744199e9d2227892112b745b 19.86MB / 19.86MB 5.8s
+#17 sha256:93e46ac5a04b1d62f916f18b74d9b8806cdf9d9c8ad44c45bad4a079d3c9ffef 6.08MB / 6.08MB 5.8s
+#17 sha256:2dfb635db596dd5eb4f27fbc082f86f54831b958744199e9d2227892112b745b 19.86MB / 19.86MB 6.7s done
+#17 sha256:93e46ac5a04b1d62f916f18b74d9b8806cdf9d9c8ad44c45bad4a079d3c9ffef 6.08MB / 6.08MB 6.7s done
+#17 ...
+
+#11 [datanode 1/6] FROM docker.io/bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8@sha256:5623fca5e36d890983cdc6cfd29744d1d65476528117975b3af6a80d99b3c62f
+#11 DONE 7.3s
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 ...
+
+#18 [datanode 2/6] WORKDIR /datanode
+#18 ...
+
+#19 [mysql 1/5] FROM docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0
+#19 resolve docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0 0.1s done
+#19 sha256:5d84b7f27f81300ac1e3243fd294dac525f6858c857edfe255ee20d1bda2adcf 2.86kB / 2.86kB done
+#19 sha256:380443b0f0dac49961644a8a48786d1448c4142be9be74f8d8df8c337ab1b1a6 6.52kB / 6.52kB done
+#19 sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0 2.62kB / 2.62kB done
+#19 sha256:500d7b2546c4e2118109493e62a416f6e12fe0670ed784ab0a5ada2787573be5 49.50MB / 49.50MB 6.6s done
+#19 sha256:01859c60b4e2a692ef70d5c91c28baf22516970962bf99dab0fbf6ee58395331 884B / 884B 6.6s done
+#19 extracting sha256:500d7b2546c4e2118109493e62a416f6e12fe0670ed784ab0a5ada2787573be5 3.2s
+#19 sha256:87565b56b57ee54a1c6c80613597ce37e29d093bc5661af77607a1eaad95b482 782.34kB / 782.34kB 6.8s done
+#19 sha256:7d70b564625bb51eb2eee807280e5cdceaef65de5d24138b8158c5b97d6080b4 2.61kB / 2.61kB 6.8s done
+#19 sha256:9b2f3769f0be64503ae53ceab4179c1c65bed6d303a6329e55061c28f3071651 6.82MB / 6.82MB 6.8s
+#19 sha256:1d289f7d1ed9b007703129e77fc47b788344d8da9d6a54fdccc2a8ea78fd9d22 337B / 337B 6.9s done
+#19 sha256:d210a5b69bfed80438c2f7f71b42ba858521b3c97d811ed65cd359f779489eab 49.27MB / 49.27MB 9.9s
+#19 sha256:98045e6cd57241627537a64a266ed66d5058135d15590475cc593f8356ff97d2 168.95MB / 168.95MB 9.9s
+#19 sha256:95f5cac1a9e9760f8007c95cc9a6e986a0e6c15b97d05a231713de5a020503a4 325B / 325B 7.0s done
+#19 sha256:1421f5b704d5566263d9074e3dfac2908d58614a9e15c7e845baff4d4df05b38 5.33kB / 5.33kB 9.9s
+#19 extracting sha256:500d7b2546c4e2118109493e62a416f6e12fe0670ed784ab0a5ada2787573be5 4.5s done
+#19 ...
+
+#18 [datanode 2/6] WORKDIR /datanode
+#18 DONE 4.5s
+
+#19 [mysql 1/5] FROM docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0
+#19 extracting sha256:01859c60b4e2a692ef70d5c91c28baf22516970962bf99dab0fbf6ee58395331 done
+#19 ...
+
+#20 [datanode 3/6] RUN rm /opt/hadoop-2.7.4/share/hadoop/common/lib/avro-1.7.4.jar
+#20 DONE 3.3s
+
+#21 [datanode 4/6] COPY jdbc/org.json-20120521.jar /opt/hadoop-2.7.4/share/hadoop/common/lib
+#21 DONE 0.2s
+
+#22 [datanode 5/6] COPY jdbc/avro-1.8.1.jar /opt/hadoop-2.7.4/share/hadoop/common/lib
+#22 DONE 0.4s
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 extracting sha256:15b1d8a5ff03aeb0f14c8d39a60a73ef22f656550bfa1bb90d1850f25a0ac0fa 7.9s done
+#17 extracting sha256:22718812f617084a0c5e539e02723b75bf79ea2a589430f820efcbb07f45b91b 1.2s
+#17 ...
+
+#23 [datanode 6/6] COPY jdbc/org.json-20120521.jar /usr/local/sqoop/lib/
+#23 DONE 0.2s
+
+#19 [mysql 1/5] FROM docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0
+#19 sha256:d210a5b69bfed80438c2f7f71b42ba858521b3c97d811ed65cd359f779489eab 49.27MB / 49.27MB 11.5s done
+#19 sha256:98045e6cd57241627537a64a266ed66d5058135d15590475cc593f8356ff97d2 168.95MB / 168.95MB 11.5s done
+#19 sha256:1421f5b704d5566263d9074e3dfac2908d58614a9e15c7e845baff4d4df05b38 5.33kB / 5.33kB 10.4s done
+#19 extracting sha256:87565b56b57ee54a1c6c80613597ce37e29d093bc5661af77607a1eaad95b482 0.1s done
+#19 extracting sha256:9b2f3769f0be64503ae53ceab4179c1c65bed6d303a6329e55061c28f3071651 0.9s done
+#19 extracting sha256:7d70b564625bb51eb2eee807280e5cdceaef65de5d24138b8158c5b97d6080b4 done
+#19 extracting sha256:1d289f7d1ed9b007703129e77fc47b788344d8da9d6a54fdccc2a8ea78fd9d22 done
+#19 extracting sha256:d210a5b69bfed80438c2f7f71b42ba858521b3c97d811ed65cd359f779489eab
+#19 ...
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 extracting sha256:22718812f617084a0c5e539e02723b75bf79ea2a589430f820efcbb07f45b91b 6.6s
+#17 extracting sha256:22718812f617084a0c5e539e02723b75bf79ea2a589430f820efcbb07f45b91b 7.1s done
+#17 extracting sha256:401a98f7495bee3e8e6943da9f52f0ab1043c43eb1d107a3817fc2a4b916be97
+#17 ...
+
+#24 [datanode] exporting to image
+#24 exporting layers 7.0s done
+#24 writing image sha256:c1e59474ebe16ffde0e20f0c1059d1fc5f22ee6c85978a60791e6e0173766322 done
+#24 naming to docker.io/library/bigdataarquitectura-datanode 0.0s done
+#24 DONE 7.1s
+
+#25 [datanode] resolving provenance for metadata file
+#25 DONE 0.0s
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 ...
+
+#19 [mysql 1/5] FROM docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0
+#19 extracting sha256:d210a5b69bfed80438c2f7f71b42ba858521b3c97d811ed65cd359f779489eab 6.6s
+#19 extracting sha256:d210a5b69bfed80438c2f7f71b42ba858521b3c97d811ed65cd359f779489eab 8.3s done
+#19 extracting sha256:95f5cac1a9e9760f8007c95cc9a6e986a0e6c15b97d05a231713de5a020503a4 done
+#19 extracting sha256:98045e6cd57241627537a64a266ed66d5058135d15590475cc593f8356ff97d2
+#19 ...
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 extracting sha256:401a98f7495bee3e8e6943da9f52f0ab1043c43eb1d107a3817fc2a4b916be97 6.0s
+#17 extracting sha256:401a98f7495bee3e8e6943da9f52f0ab1043c43eb1d107a3817fc2a4b916be97 7.6s done
+#17 ...
+
+#19 [mysql 1/5] FROM docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0
+#19 extracting sha256:98045e6cd57241627537a64a266ed66d5058135d15590475cc593f8356ff97d2 5.4s
+#19 ...
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 extracting sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 2.3s
+#17 extracting sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 7.4s
+#17 ...
+
+#19 [mysql 1/5] FROM docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0
+#19 extracting sha256:98045e6cd57241627537a64a266ed66d5058135d15590475cc593f8356ff97d2 16.0s
+#19 ...
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 extracting sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 12.5s
+#17 extracting sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 17.9s
+#17 ...
+
+#19 [mysql 1/5] FROM docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0
+#19 extracting sha256:98045e6cd57241627537a64a266ed66d5058135d15590475cc593f8356ff97d2 26.8s done
+#19 ...
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 extracting sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 24.1s
+#17 ...
+
+#19 [mysql 1/5] FROM docker.io/library/mysql:latest@sha256:94254b456a6db9b56c83525a86bff4c7f1e52335f934cbed686fe1ce763116a0
+#19 extracting sha256:1421f5b704d5566263d9074e3dfac2908d58614a9e15c7e845baff4d4df05b38 done
+#19 DONE 59.6s
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 ...
+
+#26 [mysql 2/5] WORKDIR /mysql/data
+#26 DONE 0.3s
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 ...
+
+#27 [mysql 3/5] COPY data_warehouse_netflix.sql /docker-entrypoint-initdb.d/
+#27 DONE 0.2s
+
+#28 [mysql 4/5] COPY db_movies_neflix_transact.sql /docker-entrypoint-initdb.d/
+#28 DONE 0.1s
+
+#29 [mysql 5/5] COPY retail_db.sql /docker-entrypoint-initdb.d/
+#29 DONE 0.3s
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 extracting sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 29.1s
+#17 ...
+
+#30 [mysql] exporting to image
+#30 exporting layers 4.7s done
+#30 writing image sha256:25f01ab7a6e141f569b6b9b7e16b144d80a9343764481d7da5e63da12dfd48c5 0.0s done
+#30 naming to docker.io/library/bigdataarquitectura-mysql 0.0s done
+#30 DONE 4.9s
+
+#31 [mysql] resolving provenance for metadata file
+#31 DONE 0.0s
+
+#17 [jupyter 1/8] FROM docker.io/library/python:3.9@sha256:43e5b456252a68813f2605019532e99e7175a3fa75af26426923c1ac68ebe232
+#17 extracting sha256:ad446e7df19acd39290d995e6d78ccbfde171596237968a140518b183d94c04f 31.7s done
+#17 extracting sha256:93e46ac5a04b1d62f916f18b74d9b8806cdf9d9c8ad44c45bad4a079d3c9ffef
+#17 extracting sha256:93e46ac5a04b1d62f916f18b74d9b8806cdf9d9c8ad44c45bad4a079d3c9ffef 0.3s done
+#17 extracting sha256:2dfb635db596dd5eb4f27fbc082f86f54831b958744199e9d2227892112b745b
+#17 extracting sha256:2dfb635db596dd5eb4f27fbc082f86f54831b958744199e9d2227892112b745b 0.8s done
+#17 extracting sha256:b1cb890d7a544c46a696abe0ef8b127978755da915396f9e212da85d0a8c61e1 done
+#17 DONE 69.1s
+
+#32 [jupyter 2/8] RUN pip install mysql-connector-python
+#32 2.749 Collecting mysql-connector-python
+#32 2.789   Downloading mysql_connector_python-9.4.0-cp39-cp39-manylinux_2_28_x86_64.whl (33.9 MB)
+#32 3.598      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.9/33.9 MB 16.6 MB/s eta 0:00:00
+#32 3.676 Installing collected packages: mysql-connector-python
+#32 4.281 Successfully installed mysql-connector-python-9.4.0
+#32 4.282 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#32 4.395 
+#32 4.395 [notice] A new release of pip is available: 23.0.1 -> 25.2
+#32 4.395 [notice] To update, run: pip install --upgrade pip
+#32 DONE 5.9s
+
+#33 [jupyter 3/8] RUN pip install jupyterlab
+#33 1.085 Collecting jupyterlab
+#33 1.117   Downloading jupyterlab-4.4.7-py3-none-any.whl (12.3 MB)
+#33 1.394      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 42.3 MB/s eta 0:00:00
+#33 1.484 Collecting notebook-shim>=0.2
+#33 1.492   Downloading notebook_shim-0.2.4-py3-none-any.whl (13 kB)
+#33 1.538 Collecting tomli>=1.2.2
+#33 1.546   Downloading tomli-2.2.1-py3-none-any.whl (14 kB)
+#33 1.594 Collecting packaging
+#33 1.602   Downloading packaging-25.0-py3-none-any.whl (66 kB)
+#33 1.609      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.5/66.5 kB 13.1 MB/s eta 0:00:00
+#33 1.655 Collecting jupyter-core
+#33 1.665   Downloading jupyter_core-5.8.1-py3-none-any.whl (28 kB)
+#33 1.772 Collecting importlib-metadata>=4.8.3
+#33 1.784   Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+#33 1.867 Collecting jupyterlab-server<3,>=2.27.1
+#33 1.875   Downloading jupyterlab_server-2.27.3-py3-none-any.whl (59 kB)
+#33 1.882      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.7/59.7 kB 12.9 MB/s eta 0:00:00
+#33 1.976 Collecting tornado>=6.2.0
+#33 1.985   Downloading tornado-6.5.2-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (443 kB)
+#33 2.001      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 443.9/443.9 kB 32.7 MB/s eta 0:00:00
+#33 2.006 Requirement already satisfied: setuptools>=41.1.0 in /usr/local/lib/python3.9/site-packages (from jupyterlab) (58.1.0)
+#33 2.094 Collecting jupyter-server<3,>=2.4.0
+#33 2.103   Downloading jupyter_server-2.17.0-py3-none-any.whl (388 kB)
+#33 2.118      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 388.2/388.2 kB 30.2 MB/s eta 0:00:00
+#33 2.208 Collecting ipykernel!=6.30.0,>=6.5.0
+#33 2.217   Downloading ipykernel-6.30.1-py3-none-any.whl (117 kB)
+#33 2.225      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.5/117.5 kB 17.4 MB/s eta 0:00:00
+#33 2.257 Collecting jupyter-lsp>=2.0.0
+#33 2.265   Downloading jupyter_lsp-2.3.0-py3-none-any.whl (76 kB)
+#33 2.272      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.7/76.7 kB 14.3 MB/s eta 0:00:00
+#33 2.326 Collecting httpx<1,>=0.25.0
+#33 2.335   Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+#33 2.343      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 11.9 MB/s eta 0:00:00
+#33 2.368 Collecting async-lru>=1.0.0
+#33 2.376   Downloading async_lru-2.0.5-py3-none-any.whl (6.1 kB)
+#33 2.417 Collecting jinja2>=3.0.3
+#33 2.426   Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#33 2.436      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 17.4 MB/s eta 0:00:00
+#33 2.479 Collecting traitlets
+#33 2.487   Downloading traitlets-5.14.3-py3-none-any.whl (85 kB)
+#33 2.494      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.4/85.4 kB 15.4 MB/s eta 0:00:00
+#33 2.553 Collecting typing_extensions>=4.0.0
+#33 2.562   Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+#33 2.568      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 9.3 MB/s eta 0:00:00
+#33 2.626 Collecting idna
+#33 2.638   Downloading idna-3.10-py3-none-any.whl (70 kB)
+#33 2.645      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 10.9 MB/s eta 0:00:00
+#33 2.694 Collecting anyio
+#33 2.703   Downloading anyio-4.10.0-py3-none-any.whl (107 kB)
+#33 2.711      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.2/107.2 kB 18.9 MB/s eta 0:00:00
+#33 2.759 Collecting httpcore==1.*
+#33 2.767   Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+#33 2.774      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 14.6 MB/s eta 0:00:00
+#33 2.816 Collecting certifi
+#33 2.827   Downloading certifi-2025.8.3-py3-none-any.whl (161 kB)
+#33 2.836      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.2/161.2 kB 24.0 MB/s eta 0:00:00
+#33 2.869 Collecting h11>=0.16
+#33 2.877   Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#33 2.963 Collecting zipp>=3.20
+#33 2.973   Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+#33 3.028 Collecting comm>=0.1.1
+#33 3.036   Downloading comm-0.2.3-py3-none-any.whl (7.3 kB)
+#33 3.345 Collecting debugpy>=1.6.5
+#33 3.354   Downloading debugpy-1.8.16-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+#33 3.445      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 41.0 MB/s eta 0:00:00
+#33 4.161 Collecting pyzmq>=25
+#33 4.170   Downloading pyzmq-27.1.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (863 kB)
+#33 4.195      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 863.8/863.8 kB 37.9 MB/s eta 0:00:00
+#33 4.335 Collecting ipython>=7.23.1
+#33 4.344   Downloading ipython-8.18.1-py3-none-any.whl (808 kB)
+#33 4.367      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 808.2/808.2 kB 39.1 MB/s eta 0:00:00
+#33 4.397 Collecting matplotlib-inline>=0.1
+#33 4.405   Downloading matplotlib_inline-0.1.7-py3-none-any.whl (9.9 kB)
+#33 4.594 Collecting psutil>=5.7
+#33 4.603   Downloading psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (277 kB)
+#33 4.615      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 278.0/278.0 kB 30.1 MB/s eta 0:00:00
+#33 4.682 Collecting jupyter-client>=8.0.0
+#33 4.691   Downloading jupyter_client-8.6.3-py3-none-any.whl (106 kB)
+#33 4.699      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 106.1/106.1 kB 18.3 MB/s eta 0:00:00
+#33 4.738 Collecting nest-asyncio>=1.4
+#33 4.746   Downloading nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+#33 4.888 Collecting MarkupSafe>=2.0
+#33 4.898   Downloading MarkupSafe-3.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20 kB)
+#33 4.964 Collecting platformdirs>=2.5
+#33 4.973   Downloading platformdirs-4.4.0-py3-none-any.whl (18 kB)
+#33 5.096 Collecting prometheus-client>=0.9
+#33 5.104   Downloading prometheus_client-0.22.1-py3-none-any.whl (58 kB)
+#33 5.113      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.7/58.7 kB 7.4 MB/s eta 0:00:00
+#33 5.162 Collecting websocket-client>=1.7
+#33 5.170   Downloading websocket_client-1.8.0-py3-none-any.whl (58 kB)
+#33 5.177      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 kB 11.8 MB/s eta 0:00:00
+#33 5.213 Collecting jupyter-server-terminals>=0.4.4
+#33 5.222   Downloading jupyter_server_terminals-0.5.3-py3-none-any.whl (13 kB)
+#33 5.291 Collecting nbconvert>=6.4.4
+#33 5.300   Downloading nbconvert-7.16.6-py3-none-any.whl (258 kB)
+#33 5.311      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 258.5/258.5 kB 29.6 MB/s eta 0:00:00
+#33 5.367 Collecting argon2-cffi>=21.1
+#33 5.376   Downloading argon2_cffi-25.1.0-py3-none-any.whl (14 kB)
+#33 5.432 Collecting send2trash>=1.8.2
+#33 5.442   Downloading Send2Trash-1.8.3-py3-none-any.whl (18 kB)
+#33 5.483 Collecting nbformat>=5.3.0
+#33 5.492   Downloading nbformat-5.10.4-py3-none-any.whl (78 kB)
+#33 5.499      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 14.2 MB/s eta 0:00:00
+#33 5.535 Collecting overrides>=5.0
+#33 5.544   Downloading overrides-7.7.0-py3-none-any.whl (17 kB)
+#33 5.578 Collecting jupyter-events>=0.11.0
+#33 5.586   Downloading jupyter_events-0.12.0-py3-none-any.whl (19 kB)
+#33 5.623 Collecting terminado>=0.8.3
+#33 5.631   Downloading terminado-0.18.1-py3-none-any.whl (14 kB)
+#33 5.709 Collecting json5>=0.9.0
+#33 5.719   Downloading json5-0.12.1-py3-none-any.whl (36 kB)
+#33 5.815 Collecting jsonschema>=4.18.0
+#33 5.829   Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+#33 5.840      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 kB 9.6 MB/s eta 0:00:00
+#33 5.904 Collecting requests>=2.31
+#33 5.914   Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+#33 5.922      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.7/64.7 kB 10.1 MB/s eta 0:00:00
+#33 6.020 Collecting babel>=2.10
+#33 6.029   Downloading babel-2.17.0-py3-none-any.whl (10.2 MB)
+#33 6.284      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 40.4 MB/s eta 0:00:00
+#33 6.393 Collecting exceptiongroup>=1.0.2
+#33 6.401   Downloading exceptiongroup-1.3.0-py3-none-any.whl (16 kB)
+#33 6.427 Collecting sniffio>=1.1
+#33 6.435   Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+#33 6.487 Collecting argon2-cffi-bindings
+#33 6.498   Downloading argon2_cffi_bindings-25.1.0-cp39-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (87 kB)
+#33 6.506      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.1/87.1 kB 14.6 MB/s eta 0:00:00
+#33 6.625 Collecting stack-data
+#33 6.634   Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+#33 6.663 Collecting pexpect>4.3
+#33 6.672   Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+#33 6.678      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 13.8 MB/s eta 0:00:00
+#33 6.713 Collecting decorator
+#33 6.722   Downloading decorator-5.2.1-py3-none-any.whl (9.2 kB)
+#33 6.781 Collecting pygments>=2.4.0
+#33 6.791   Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+#33 6.826      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 39.2 MB/s eta 0:00:00
+#33 6.907 Collecting prompt-toolkit<3.1.0,>=3.0.41
+#33 6.916   Downloading prompt_toolkit-3.0.52-py3-none-any.whl (391 kB)
+#33 6.932      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 391.4/391.4 kB 31.6 MB/s eta 0:00:00
+#33 6.972 Collecting jedi>=0.16
+#33 6.980   Downloading jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+#33 7.020      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 42.1 MB/s eta 0:00:00
+#33 7.109 Collecting attrs>=22.2.0
+#33 7.118   Downloading attrs-25.3.0-py3-none-any.whl (63 kB)
+#33 7.125      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 12.6 MB/s eta 0:00:00
+#33 7.189 Collecting referencing>=0.28.4
+#33 7.198   Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+#33 7.235 Collecting jsonschema-specifications>=2023.03.6
+#33 7.245   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+#33 8.100 Collecting rpds-py>=0.7.1
+#33 8.109   Downloading rpds_py-0.27.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (384 kB)
+#33 8.123      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 384.4/384.4 kB 34.1 MB/s eta 0:00:00
+#33 8.180 Collecting python-dateutil>=2.8.2
+#33 8.188   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+#33 8.199      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 27.6 MB/s eta 0:00:00
+#33 8.250 Collecting rfc3986-validator>=0.1.1
+#33 8.259   Downloading rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+#33 8.291 Collecting python-json-logger>=2.0.4
+#33 8.300   Downloading python_json_logger-3.3.0-py3-none-any.whl (15 kB)
+#33 8.328 Collecting rfc3339-validator
+#33 8.336   Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+#33 8.443 Collecting pyyaml>=5.3
+#33 8.453   Downloading PyYAML-6.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (737 kB)
+#33 8.475      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 737.4/737.4 kB 38.2 MB/s eta 0:00:00
+#33 8.587 Collecting mistune<4,>=2.0.3
+#33 8.597   Downloading mistune-3.1.4-py3-none-any.whl (53 kB)
+#33 8.605      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.5/53.5 kB 9.2 MB/s eta 0:00:00
+#33 8.645 Collecting pandocfilters>=1.4.1
+#33 8.652   Downloading pandocfilters-1.5.1-py2.py3-none-any.whl (8.7 kB)
+#33 8.697 Collecting nbclient>=0.5.0
+#33 8.706   Downloading nbclient-0.10.2-py3-none-any.whl (25 kB)
+#33 8.735 Collecting jupyterlab-pygments
+#33 8.743   Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl (15 kB)
+#33 8.818 Collecting beautifulsoup4
+#33 8.828   Downloading beautifulsoup4-4.13.5-py3-none-any.whl (105 kB)
+#33 8.836      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.1/105.1 kB 17.2 MB/s eta 0:00:00
+#33 8.886 Collecting bleach[css]!=5.0.0
+#33 8.897   Downloading bleach-6.2.0-py3-none-any.whl (163 kB)
+#33 8.906      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.4/163.4 kB 23.9 MB/s eta 0:00:00
+#33 8.933 Collecting defusedxml
+#33 8.942   Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+#33 9.001 Collecting fastjsonschema>=2.15
+#33 9.010   Downloading fastjsonschema-2.21.2-py3-none-any.whl (24 kB)
+#33 9.174 Collecting urllib3<3,>=1.21.1
+#33 9.182   Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+#33 9.193      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.8/129.8 kB 16.2 MB/s eta 0:00:00
+#33 9.410 Collecting charset_normalizer<4,>=2
+#33 9.420   Downloading charset_normalizer-3.4.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (152 kB)
+#33 9.429      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 152.5/152.5 kB 23.1 MB/s eta 0:00:00
+#33 9.488 Collecting ptyprocess
+#33 9.498   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+#33 9.654 Collecting webencodings
+#33 9.662   Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+#33 9.692 Collecting tinycss2<1.5,>=1.1.0
+#33 9.701   Downloading tinycss2-1.4.0-py3-none-any.whl (26 kB)
+#33 9.812 Collecting parso<0.9.0,>=0.8.4
+#33 9.827   Downloading parso-0.8.5-py2.py3-none-any.whl (106 kB)
+#33 9.836      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 106.7/106.7 kB 17.8 MB/s eta 0:00:00
+#33 9.896 Collecting jsonpointer>1.13
+#33 9.906   Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+#33 9.933 Collecting fqdn
+#33 9.943   Downloading fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+#33 9.968 Collecting uri-template
+#33 9.978   Downloading uri_template-1.3.0-py3-none-any.whl (11 kB)
+#33 10.00 Collecting isoduration
+#33 10.01   Downloading isoduration-20.11.0-py3-none-any.whl (11 kB)
+#33 10.04 Collecting rfc3987-syntax>=1.1.0
+#33 10.05   Downloading rfc3987_syntax-1.1.0-py3-none-any.whl (8.0 kB)
+#33 10.08 Collecting webcolors>=24.6.0
+#33 10.10   Downloading webcolors-24.11.1-py3-none-any.whl (14 kB)
+#33 10.25 Collecting wcwidth
+#33 10.27   Downloading wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+#33 10.38 Collecting six>=1.5
+#33 10.39   Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#33 11.23 Collecting cffi>=1.0.1
+#33 11.24   Downloading cffi-2.0.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (216 kB)
+#33 11.25      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 216.5/216.5 kB 26.1 MB/s eta 0:00:00
+#33 11.33 Collecting soupsieve>1.2
+#33 11.35   Downloading soupsieve-2.8-py3-none-any.whl (36 kB)
+#33 11.52 Collecting executing>=1.2.0
+#33 11.53   Downloading executing-2.2.1-py2.py3-none-any.whl (28 kB)
+#33 11.58 Collecting pure-eval
+#33 11.58   Downloading pure_eval-0.2.3-py3-none-any.whl (11 kB)
+#33 11.62 Collecting asttokens>=2.1.0
+#33 11.63   Downloading asttokens-3.0.0-py3-none-any.whl (26 kB)
+#33 11.69 Collecting pycparser
+#33 11.70   Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+#33 11.71      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.1/118.1 kB 20.1 MB/s eta 0:00:00
+#33 11.81 Collecting lark>=1.2.2
+#33 11.82   Downloading lark-1.2.2-py3-none-any.whl (111 kB)
+#33 11.83      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.0/111.0 kB 19.4 MB/s eta 0:00:00
+#33 12.00 Collecting arrow>=0.15.0
+#33 12.01   Downloading arrow-1.3.0-py3-none-any.whl (66 kB)
+#33 12.01      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 12.1 MB/s eta 0:00:00
+#33 12.12 Collecting types-python-dateutil>=2.8.10
+#33 12.13   Downloading types_python_dateutil-2.9.0.20250822-py3-none-any.whl (17 kB)
+#33 12.93 Installing collected packages: webencodings, wcwidth, pure-eval, ptyprocess, fastjsonschema, zipp, websocket-client, webcolors, urllib3, uri-template, typing_extensions, types-python-dateutil, traitlets, tornado, tomli, tinycss2, soupsieve, sniffio, six, send2trash, rpds-py, rfc3986-validator, pyzmq, pyyaml, pygments, pycparser, psutil, prompt-toolkit, prometheus-client, platformdirs, pexpect, parso, pandocfilters, packaging, overrides, nest-asyncio, MarkupSafe, lark, jupyterlab-pygments, jsonpointer, json5, idna, h11, fqdn, executing, defusedxml, decorator, debugpy, comm, charset_normalizer, certifi, bleach, babel, attrs, asttokens, terminado, stack-data, rfc3987-syntax, rfc3339-validator, requests, referencing, python-json-logger, python-dateutil, mistune, matplotlib-inline, jupyter-core, jinja2, jedi, importlib-metadata, httpcore, exceptiongroup, cffi, beautifulsoup4, async-lru, jupyter-server-terminals, jupyter-client, jsonschema-specifications, ipython, arrow, argon2-cffi-bindings, anyio, jsonschema, isoduration, ipykernel, httpx, argon2-cffi, nbformat, nbclient, jupyter-events, nbconvert, jupyter-server, notebook-shim, jupyterlab-server, jupyter-lsp, jupyterlab
+#33 20.72 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#33 20.72 Successfully installed MarkupSafe-3.0.2 anyio-4.10.0 argon2-cffi-25.1.0 argon2-cffi-bindings-25.1.0 arrow-1.3.0 asttokens-3.0.0 async-lru-2.0.5 attrs-25.3.0 babel-2.17.0 beautifulsoup4-4.13.5 bleach-6.2.0 certifi-2025.8.3 cffi-2.0.0 charset_normalizer-3.4.3 comm-0.2.3 debugpy-1.8.16 decorator-5.2.1 defusedxml-0.7.1 exceptiongroup-1.3.0 executing-2.2.1 fastjsonschema-2.21.2 fqdn-1.5.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.10 importlib-metadata-8.7.0 ipykernel-6.30.1 ipython-8.18.1 isoduration-20.11.0 jedi-0.19.2 jinja2-3.1.6 json5-0.12.1 jsonpointer-3.0.0 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 jupyter-client-8.6.3 jupyter-core-5.8.1 jupyter-events-0.12.0 jupyter-lsp-2.3.0 jupyter-server-2.17.0 jupyter-server-terminals-0.5.3 jupyterlab-4.4.7 jupyterlab-pygments-0.3.0 jupyterlab-server-2.27.3 lark-1.2.2 matplotlib-inline-0.1.7 mistune-3.1.4 nbclient-0.10.2 nbconvert-7.16.6 nbformat-5.10.4 nest-asyncio-1.6.0 notebook-shim-0.2.4 overrides-7.7.0 packaging-25.0 pandocfilters-1.5.1 parso-0.8.5 pexpect-4.9.0 platformdirs-4.4.0 prometheus-client-0.22.1 prompt-toolkit-3.0.52 psutil-7.0.0 ptyprocess-0.7.0 pure-eval-0.2.3 pycparser-2.23 pygments-2.19.2 python-dateutil-2.9.0.post0 python-json-logger-3.3.0 pyyaml-6.0.2 pyzmq-27.1.0 referencing-0.36.2 requests-2.32.5 rfc3339-validator-0.1.4 rfc3986-validator-0.1.1 rfc3987-syntax-1.1.0 rpds-py-0.27.1 send2trash-1.8.3 six-1.17.0 sniffio-1.3.1 soupsieve-2.8 stack-data-0.6.3 terminado-0.18.1 tinycss2-1.4.0 tomli-2.2.1 tornado-6.5.2 traitlets-5.14.3 types-python-dateutil-2.9.0.20250822 typing_extensions-4.15.0 uri-template-1.3.0 urllib3-2.5.0 wcwidth-0.2.13 webcolors-24.11.1 webencodings-0.5.1 websocket-client-1.8.0 zipp-3.23.0
+#33 20.74 
+#33 20.74 [notice] A new release of pip is available: 23.0.1 -> 25.2
+#33 20.74 [notice] To update, run: pip install --upgrade pip
+#33 DONE 23.8s
+
+#34 [jupyter 4/8] RUN pip install psycopg2-binary
+#34 0.891 Collecting psycopg2-binary
+#34 0.928   Downloading psycopg2_binary-2.9.10-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+#34 1.197      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 11.4 MB/s eta 0:00:00
+#34 1.883 Installing collected packages: psycopg2-binary
+#34 1.985 Successfully installed psycopg2-binary-2.9.10
+#34 1.986 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#34 1.990 
+#34 1.990 [notice] A new release of pip is available: 23.0.1 -> 25.2
+#34 1.990 [notice] To update, run: pip install --upgrade pip
+#34 DONE 2.2s
+
+#35 [jupyter 5/8] RUN pip install pymongo
+#35 1.476 Collecting pymongo
+#35 1.518   Downloading pymongo-4.15.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (945 kB)
+#35 1.567      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 945.8/945.8 kB 20.5 MB/s eta 0:00:00
+#35 1.631 Collecting dnspython<3.0.0,>=1.16.0
+#35 1.640   Downloading dnspython-2.7.0-py3-none-any.whl (313 kB)
+#35 1.653      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 313.6/313.6 kB 30.8 MB/s eta 0:00:00
+#35 2.475 Installing collected packages: dnspython, pymongo
+#35 3.089 Successfully installed dnspython-2.7.0 pymongo-4.15.0
+#35 3.089 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#35 3.093 
+#35 3.093 [notice] A new release of pip is available: 23.0.1 -> 25.2
+#35 3.093 [notice] To update, run: pip install --upgrade pip
+#35 DONE 3.4s
+
+#36 [jupyter 6/8] RUN apt-get update
+#36 0.440 Hit:1 http://deb.debian.org/debian trixie InRelease
+#36 0.440 Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+#36 0.440 Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+#36 0.491 Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9669 kB]
+#36 0.585 Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [5412 B]
+#36 0.585 Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [40.2 kB]
+#36 1.288 Fetched 9805 kB in 1s (11.1 MB/s)
+#36 1.288 Reading package lists...
+#36 DONE 2.4s
+
+#37 [jupyter 7/8] RUN apt-get -y install default-jre
+#37 0.246 Reading package lists...
+#37 0.804 Building dependency tree...
+#37 0.954 Reading state information...
+#37 1.151 The following additional packages will be installed:
+#37 1.151   adwaita-icon-theme alsa-topology-conf alsa-ucm-conf at-spi2-common
+#37 1.151   at-spi2-core ca-certificates-java dbus dbus-bin dbus-daemon
+#37 1.151   dbus-session-bus-common dbus-system-bus-common dbus-user-session
+#37 1.151   dconf-gsettings-backend dconf-service default-jre-headless dmsetup
+#37 1.152   fonts-dejavu-extra gsettings-desktop-schemas gtk-update-icon-cache
+#37 1.152   java-common libapparmor1 libasound2-data libasound2t64 libatk-bridge2.0-0t64
+#37 1.152   libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0t64 libatspi2.0-0t64
+#37 1.152   libavahi-client3 libavahi-common-data libavahi-common3 libcloudproviders0
+#37 1.152   libcolord2 libcryptsetup12 libcups2t64 libdbus-1-3 libdconf1
+#37 1.152   libdevmapper1.02.1 libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm2
+#37 1.152   libepoxy0 libgbm1 libgif7 libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0
+#37 1.152   libglx0 libgtk-3-0t64 libgtk-3-bin libgtk-3-common libjson-c5 libkmod2
+#37 1.152   libllvm19 libnspr4 libnss-systemd libnss3 libpam-systemd libpciaccess0
+#37 1.152   libpcsclite1 libsensors-config libsensors5 libsystemd-shared libsystemd0
+#37 1.152   libudev1 libvulkan1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+#37 1.152   libwayland-server0 libx11-xcb1 libxaw7 libxcb-dri3-0 libxcb-glx0
+#37 1.152   libxcb-present0 libxcb-randr0 libxcb-shape0 libxcb-sync1 libxcb-xfixes0
+#37 1.152   libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6 libxinerama1
+#37 1.152   libxkbcommon0 libxkbfile1 libxmu6 libxmuu1 libxpm4 libxrandr2 libxshmfence1
+#37 1.153   libxtst6 libxv1 libxxf86dga1 libxxf86vm1 libz3-4 linux-sysctl-defaults luit
+#37 1.153   mesa-libgallium mesa-vulkan-drivers openjdk-21-jre openjdk-21-jre-headless
+#37 1.153   systemd systemd-cryptsetup systemd-sysv systemd-timesyncd x11-utils xkb-data
+#37 1.154 Suggested packages:
+#37 1.154   adwaita-icon-theme-legacy alsa-utils libasound2-plugins colord cups-common
+#37 1.154   gvfs libtss2-rc0t64 pciutils pcscd lm-sensors libarchive13t64 libbpf1
+#37 1.154   libdw1t64 libip4tc2 libpwquality1 libqrencode4 libnss-mdns
+#37 1.154   fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+#37 1.154   | fonts-wqy-zenhei fonts-indic systemd-container systemd-homed
+#37 1.154   systemd-userdbd systemd-boot systemd-resolved systemd-repart
+#37 1.154   libtss2-tcti-device0 polkitd mesa-utils
+#37 1.624 The following NEW packages will be installed:
+#37 1.632   adwaita-icon-theme alsa-topology-conf alsa-ucm-conf at-spi2-common
+#37 1.632   at-spi2-core ca-certificates-java dbus dbus-bin dbus-daemon
+#37 1.632   dbus-session-bus-common dbus-system-bus-common dbus-user-session
+#37 1.632   dconf-gsettings-backend dconf-service default-jre default-jre-headless
+#37 1.632   dmsetup fonts-dejavu-extra gsettings-desktop-schemas gtk-update-icon-cache
+#37 1.632   java-common libapparmor1 libasound2-data libasound2t64 libatk-bridge2.0-0t64
+#37 1.632   libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0t64 libatspi2.0-0t64
+#37 1.632   libavahi-client3 libavahi-common-data libavahi-common3 libcloudproviders0
+#37 1.632   libcolord2 libcryptsetup12 libcups2t64 libdbus-1-3 libdconf1
+#37 1.632   libdevmapper1.02.1 libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm2
+#37 1.632   libepoxy0 libgbm1 libgif7 libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0
+#37 1.632   libglx0 libgtk-3-0t64 libgtk-3-bin libgtk-3-common libjson-c5 libkmod2
+#37 1.632   libllvm19 libnspr4 libnss-systemd libnss3 libpam-systemd libpciaccess0
+#37 1.632   libpcsclite1 libsensors-config libsensors5 libsystemd-shared libvulkan1
+#37 1.632   libwayland-client0 libwayland-cursor0 libwayland-egl1 libwayland-server0
+#37 1.632   libx11-xcb1 libxaw7 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0
+#37 1.632   libxcb-shape0 libxcb-sync1 libxcb-xfixes0 libxcomposite1 libxcursor1
+#37 1.632   libxdamage1 libxfixes3 libxi6 libxinerama1 libxkbcommon0 libxkbfile1 libxmu6
+#37 1.632   libxmuu1 libxpm4 libxrandr2 libxshmfence1 libxtst6 libxv1 libxxf86dga1
+#37 1.632   libxxf86vm1 libz3-4 linux-sysctl-defaults luit mesa-libgallium
+#37 1.632   mesa-vulkan-drivers openjdk-21-jre openjdk-21-jre-headless systemd
+#37 1.632   systemd-cryptsetup systemd-sysv systemd-timesyncd x11-utils xkb-data
+#37 1.632 The following packages will be upgraded:
+#37 1.632   libsystemd0 libudev1
+#37 1.709 2 upgraded, 110 newly installed, 0 to remove and 13 not upgraded.
+#37 1.709 Need to get 127 MB of archives.
+#37 1.709 After this operation, 609 MB of additional disk space will be used.
+#37 1.709 Get:1 http://deb.debian.org/debian trixie-updates/main amd64 libsystemd-shared amd64 257.8-1~deb13u2 [2151 kB]
+#37 1.747 Get:2 http://deb.debian.org/debian trixie/main amd64 libapparmor1 amd64 4.1.0-1 [43.7 kB]
+#37 1.748 Get:3 http://deb.debian.org/debian trixie-updates/main amd64 libsystemd0 amd64 257.8-1~deb13u2 [454 kB]
+#37 1.751 Get:4 http://deb.debian.org/debian trixie-updates/main amd64 systemd amd64 257.8-1~deb13u2 [3099 kB]
+#37 1.765 Get:5 http://deb.debian.org/debian trixie-updates/main amd64 systemd-sysv amd64 257.8-1~deb13u2 [64.5 kB]
+#37 1.765 Get:6 http://deb.debian.org/debian trixie/main amd64 libdbus-1-3 amd64 1.16.2-2 [178 kB]
+#37 1.767 Get:7 http://deb.debian.org/debian trixie/main amd64 dbus-bin amd64 1.16.2-2 [80.0 kB]
+#37 1.769 Get:8 http://deb.debian.org/debian trixie/main amd64 dbus-session-bus-common all 1.16.2-2 [52.3 kB]
+#37 1.769 Get:9 http://deb.debian.org/debian trixie/main amd64 dbus-daemon amd64 1.16.2-2 [159 kB]
+#37 1.770 Get:10 http://deb.debian.org/debian trixie/main amd64 dbus-system-bus-common all 1.16.2-2 [53.5 kB]
+#37 1.771 Get:11 http://deb.debian.org/debian trixie/main amd64 dbus amd64 1.16.2-2 [71.6 kB]
+#37 1.772 Get:12 http://deb.debian.org/debian trixie-updates/main amd64 libudev1 amd64 257.8-1~deb13u2 [152 kB]
+#37 1.773 Get:13 http://deb.debian.org/debian trixie/main amd64 linux-sysctl-defaults all 4.12 [5624 B]
+#37 1.775 Get:14 http://deb.debian.org/debian trixie-updates/main amd64 libnss-systemd amd64 257.8-1~deb13u2 [219 kB]
+#37 1.780 Get:15 http://deb.debian.org/debian trixie-updates/main amd64 libpam-systemd amd64 257.8-1~deb13u2 [297 kB]
+#37 1.783 Get:16 http://deb.debian.org/debian trixie-updates/main amd64 systemd-timesyncd amd64 257.8-1~deb13u2 [92.9 kB]
+#37 1.783 Get:17 http://deb.debian.org/debian trixie/main amd64 gtk-update-icon-cache amd64 4.18.6+ds-2 [52.7 kB]
+#37 1.783 Get:18 http://deb.debian.org/debian trixie/main amd64 adwaita-icon-theme all 48.1-1 [504 kB]
+#37 1.787 Get:19 http://deb.debian.org/debian trixie/main amd64 alsa-topology-conf all 1.2.5.1-3 [15.3 kB]
+#37 1.787 Get:20 http://deb.debian.org/debian trixie/main amd64 libasound2-data all 1.2.14-1 [21.1 kB]
+#37 1.787 Get:21 http://deb.debian.org/debian trixie/main amd64 libasound2t64 amd64 1.2.14-1 [381 kB]
+#37 1.790 Get:22 http://deb.debian.org/debian trixie/main amd64 alsa-ucm-conf all 1.2.14-1 [92.5 kB]
+#37 1.790 Get:23 http://deb.debian.org/debian trixie/main amd64 at-spi2-common all 2.56.2-1 [171 kB]
+#37 1.791 Get:24 http://deb.debian.org/debian trixie/main amd64 libxi6 amd64 2:1.8.2-1 [78.9 kB]
+#37 1.792 Get:25 http://deb.debian.org/debian trixie/main amd64 libatspi2.0-0t64 amd64 2.56.2-1 [80.7 kB]
+#37 1.793 Get:26 http://deb.debian.org/debian trixie/main amd64 libxtst6 amd64 2:1.2.5-1 [25.8 kB]
+#37 1.794 Get:27 http://deb.debian.org/debian trixie/main amd64 dbus-user-session amd64 1.16.2-2 [52.1 kB]
+#37 1.797 Get:28 http://deb.debian.org/debian trixie/main amd64 libdconf1 amd64 0.40.0-5 [41.8 kB]
+#37 1.798 Get:29 http://deb.debian.org/debian trixie/main amd64 dconf-service amd64 0.40.0-5 [32.4 kB]
+#37 1.798 Get:30 http://deb.debian.org/debian trixie/main amd64 dconf-gsettings-backend amd64 0.40.0-5 [28.6 kB]
+#37 1.803 Get:31 http://deb.debian.org/debian trixie/main amd64 gsettings-desktop-schemas all 48.0-1 [700 kB]
+#37 1.808 Get:32 http://deb.debian.org/debian trixie/main amd64 at-spi2-core amd64 2.56.2-1 [61.6 kB]
+#37 1.808 Get:33 http://deb.debian.org/debian trixie/main amd64 ca-certificates-java all 20240118 [11.6 kB]
+#37 1.808 Get:34 http://deb.debian.org/debian trixie/main amd64 java-common all 0.76 [6776 B]
+#37 1.809 Get:35 http://deb.debian.org/debian trixie/main amd64 libnspr4 amd64 2:4.36-1 [110 kB]
+#37 1.811 Get:36 http://deb.debian.org/debian trixie/main amd64 libnss3 amd64 2:3.110-1 [1393 kB]
+#37 1.820 Get:37 http://deb.debian.org/debian trixie/main amd64 libpcsclite1 amd64 2.3.3-1 [55.2 kB]
+#37 1.821 Get:38 http://deb.debian.org/debian trixie/main amd64 openjdk-21-jre-headless amd64 21.0.8+9-1 [41.8 MB]
+#37 2.070 Get:39 http://deb.debian.org/debian trixie/main amd64 default-jre-headless amd64 2:1.21-76 [3192 B]
+#37 2.071 Get:40 http://deb.debian.org/debian trixie/main amd64 libatk1.0-0t64 amd64 2.56.2-1 [51.9 kB]
+#37 2.072 Get:41 http://deb.debian.org/debian trixie/main amd64 libatk-bridge2.0-0t64 amd64 2.56.2-1 [68.5 kB]
+#37 2.073 Get:42 http://deb.debian.org/debian trixie/main amd64 libcloudproviders0 amd64 0.3.6-2 [29.2 kB]
+#37 2.074 Get:43 http://deb.debian.org/debian trixie/main amd64 libcolord2 amd64 1.4.7-3 [139 kB]
+#37 2.076 Get:44 http://deb.debian.org/debian trixie/main amd64 libavahi-common-data amd64 0.8-16 [112 kB]
+#37 2.077 Get:45 http://deb.debian.org/debian trixie/main amd64 libavahi-common3 amd64 0.8-16 [44.2 kB]
+#37 2.079 Get:46 http://deb.debian.org/debian trixie/main amd64 libavahi-client3 amd64 0.8-16 [48.4 kB]
+#37 2.080 Get:47 http://deb.debian.org/debian-security trixie-security/main amd64 libcups2t64 amd64 2.4.10-3+deb13u1 [251 kB]
+#37 2.081 Get:48 http://deb.debian.org/debian trixie/main amd64 libepoxy0 amd64 1.5.10-2 [193 kB]
+#37 2.082 Get:49 http://deb.debian.org/debian trixie/main amd64 libwayland-client0 amd64 1.23.1-3 [26.8 kB]
+#37 2.083 Get:50 http://deb.debian.org/debian trixie/main amd64 libwayland-cursor0 amd64 1.23.1-3 [11.9 kB]
+#37 2.084 Get:51 http://deb.debian.org/debian trixie/main amd64 libwayland-egl1 amd64 1.23.1-3 [5860 B]
+#37 2.086 Get:52 http://deb.debian.org/debian trixie/main amd64 libxcomposite1 amd64 1:0.4.6-1 [16.3 kB]
+#37 2.087 Get:53 http://deb.debian.org/debian trixie/main amd64 libxfixes3 amd64 1:6.0.0-2+b4 [20.2 kB]
+#37 2.088 Get:54 http://deb.debian.org/debian trixie/main amd64 libxcursor1 amd64 1:1.2.3-1 [39.7 kB]
+#37 2.088 Get:55 http://deb.debian.org/debian trixie/main amd64 libxdamage1 amd64 1:1.1.6-1+b2 [15.5 kB]
+#37 2.092 Get:56 http://deb.debian.org/debian trixie/main amd64 libxinerama1 amd64 2:1.1.4-3+b4 [16.0 kB]
+#37 2.093 Get:57 http://deb.debian.org/debian trixie/main amd64 xkb-data all 2.42-1 [790 kB]
+#37 2.100 Get:58 http://deb.debian.org/debian trixie/main amd64 libxkbcommon0 amd64 1.7.0-2 [113 kB]
+#37 2.100 Get:59 http://deb.debian.org/debian trixie/main amd64 libxrandr2 amd64 2:1.5.4-1+b3 [36.3 kB]
+#37 2.102 Get:60 http://deb.debian.org/debian trixie/main amd64 libgtk-3-common all 3.24.49-3 [4908 kB]
+#37 2.125 Get:61 http://deb.debian.org/debian trixie/main amd64 libgtk-3-0t64 amd64 3.24.49-3 [2769 kB]
+#37 2.139 Get:62 http://deb.debian.org/debian trixie/main amd64 libglvnd0 amd64 1.7.0-1+b2 [52.0 kB]
+#37 2.142 Get:63 http://deb.debian.org/debian trixie/main amd64 libdrm-common all 2.4.124-2 [8288 B]
+#37 2.142 Get:64 http://deb.debian.org/debian trixie/main amd64 libdrm2 amd64 2.4.124-2 [39.0 kB]
+#37 2.144 Get:65 http://deb.debian.org/debian trixie/main amd64 libx11-xcb1 amd64 2:1.8.12-1 [247 kB]
+#37 2.146 Get:66 http://deb.debian.org/debian trixie/main amd64 libxcb-dri3-0 amd64 1.17.0-2+b1 [107 kB]
+#37 2.149 Get:67 http://deb.debian.org/debian trixie/main amd64 libxcb-glx0 amd64 1.17.0-2+b1 [122 kB]
+#37 2.150 Get:68 http://deb.debian.org/debian trixie/main amd64 libxcb-present0 amd64 1.17.0-2+b1 [106 kB]
+#37 2.152 Get:69 http://deb.debian.org/debian trixie/main amd64 libxcb-xfixes0 amd64 1.17.0-2+b1 [109 kB]
+#37 2.155 Get:70 http://deb.debian.org/debian trixie/main amd64 libxxf86vm1 amd64 1:1.1.4-1+b4 [19.3 kB]
+#37 2.158 Get:71 http://deb.debian.org/debian trixie/main amd64 libdrm-amdgpu1 amd64 2.4.124-2 [22.6 kB]
+#37 2.159 Get:72 http://deb.debian.org/debian trixie/main amd64 libpciaccess0 amd64 0.17-3+b3 [51.9 kB]
+#37 2.160 Get:73 http://deb.debian.org/debian trixie/main amd64 libdrm-intel1 amd64 2.4.124-2 [64.1 kB]
+#37 2.160 Get:74 http://deb.debian.org/debian trixie/main amd64 libz3-4 amd64 4.13.3-1 [8560 kB]
+#37 2.192 Get:75 http://deb.debian.org/debian trixie/main amd64 libllvm19 amd64 1:19.1.7-3+b1 [26.0 MB]
+#37 2.328 Get:76 http://deb.debian.org/debian trixie/main amd64 libsensors-config all 1:3.6.2-2 [16.2 kB]
+#37 2.331 Get:77 http://deb.debian.org/debian trixie/main amd64 libsensors5 amd64 1:3.6.2-2 [37.5 kB]
+#37 2.331 Get:78 http://deb.debian.org/debian trixie/main amd64 libxcb-randr0 amd64 1.17.0-2+b1 [117 kB]
+#37 2.332 Get:79 http://deb.debian.org/debian trixie/main amd64 libxcb-sync1 amd64 1.17.0-2+b1 [109 kB]
+#37 2.334 Get:80 http://deb.debian.org/debian trixie/main amd64 libxshmfence1 amd64 1.3.3-1 [10.9 kB]
+#37 2.334 Get:81 http://deb.debian.org/debian trixie/main amd64 mesa-libgallium amd64 25.0.7-2 [9629 kB]
+#37 2.376 Get:82 http://deb.debian.org/debian trixie/main amd64 libwayland-server0 amd64 1.23.1-3 [34.4 kB]
+#37 2.376 Get:83 http://deb.debian.org/debian trixie/main amd64 libgbm1 amd64 25.0.7-2 [44.4 kB]
+#37 2.380 Get:84 http://deb.debian.org/debian trixie/main amd64 libvulkan1 amd64 1.4.309.0-1 [130 kB]
+#37 2.381 Get:85 http://deb.debian.org/debian trixie/main amd64 libgl1-mesa-dri amd64 25.0.7-2 [46.1 kB]
+#37 2.381 Get:86 http://deb.debian.org/debian trixie/main amd64 libglx-mesa0 amd64 25.0.7-2 [143 kB]
+#37 2.384 Get:87 http://deb.debian.org/debian trixie/main amd64 libglx0 amd64 1.7.0-1+b2 [34.9 kB]
+#37 2.384 Get:88 http://deb.debian.org/debian trixie/main amd64 libgl1 amd64 1.7.0-1+b2 [89.5 kB]
+#37 2.384 Get:89 http://deb.debian.org/debian trixie/main amd64 libgif7 amd64 5.2.2-1+b1 [44.2 kB]
+#37 2.385 Get:90 http://deb.debian.org/debian trixie/main amd64 openjdk-21-jre amd64 21.0.8+9-1 [205 kB]
+#37 2.385 Get:91 http://deb.debian.org/debian trixie/main amd64 default-jre amd64 2:1.21-76 [1068 B]
+#37 2.388 Get:92 http://deb.debian.org/debian trixie/main amd64 libdevmapper1.02.1 amd64 2:1.02.205-2 [135 kB]
+#37 2.391 Get:93 http://deb.debian.org/debian trixie/main amd64 dmsetup amd64 2:1.02.205-2 [82.3 kB]
+#37 2.393 Get:94 http://deb.debian.org/debian trixie/main amd64 fonts-dejavu-extra all 2.37-8 [1792 kB]
+#37 2.405 Get:95 http://deb.debian.org/debian trixie/main amd64 libxmu6 amd64 2:1.1.3-3+b4 [59.0 kB]
+#37 2.409 Get:96 http://deb.debian.org/debian trixie/main amd64 libxpm4 amd64 1:3.5.17-1+b3 [56.2 kB]
+#37 2.409 Get:97 http://deb.debian.org/debian trixie/main amd64 libxaw7 amd64 2:1.0.16-1 [212 kB]
+#37 2.410 Get:98 http://deb.debian.org/debian trixie/main amd64 libxcb-shape0 amd64 1.17.0-2+b1 [106 kB]
+#37 2.411 Get:99 http://deb.debian.org/debian trixie/main amd64 libxkbfile1 amd64 1:1.1.0-1+b4 [76.5 kB]
+#37 2.414 Get:100 http://deb.debian.org/debian trixie/main amd64 libxmuu1 amd64 2:1.1.3-3+b4 [21.9 kB]
+#37 2.414 Get:101 http://deb.debian.org/debian trixie/main amd64 libxv1 amd64 2:1.0.11-1.1+b3 [23.4 kB]
+#37 2.414 Get:102 http://deb.debian.org/debian trixie/main amd64 libxxf86dga1 amd64 2:1.1.5-1+b3 [20.8 kB]
+#37 2.414 Get:103 http://deb.debian.org/debian trixie/main amd64 x11-utils amd64 7.7+7 [182 kB]
+#37 2.415 Get:104 http://deb.debian.org/debian trixie/main amd64 libatk-wrapper-java all 0.40.0-3 [63.4 kB]
+#37 2.417 Get:105 http://deb.debian.org/debian trixie/main amd64 libatk-wrapper-java-jni amd64 0.40.0-3+b3 [53.6 kB]
+#37 2.417 Get:106 http://deb.debian.org/debian trixie/main amd64 libjson-c5 amd64 0.18+ds-1 [46.0 kB]
+#37 2.420 Get:107 http://deb.debian.org/debian trixie/main amd64 libcryptsetup12 amd64 2:2.7.5-2 [254 kB]
+#37 2.424 Get:108 http://deb.debian.org/debian trixie/main amd64 libgtk-3-bin amd64 3.24.49-3 [86.5 kB]
+#37 2.426 Get:109 http://deb.debian.org/debian trixie/main amd64 libkmod2 amd64 34.2-2 [63.2 kB]
+#37 2.426 Get:110 http://deb.debian.org/debian trixie/main amd64 luit amd64 2.0.20240910-1 [55.1 kB]
+#37 2.426 Get:111 http://deb.debian.org/debian trixie/main amd64 mesa-vulkan-drivers amd64 25.0.7-2 [14.2 MB]
+#37 2.493 Get:112 http://deb.debian.org/debian trixie-updates/main amd64 systemd-cryptsetup amd64 257.8-1~deb13u2 [173 kB]
+#37 4.321 debconf: unable to initialize frontend: Dialog
+#37 4.322 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#37 4.322 debconf: falling back to frontend: Readline
+#37 4.333 debconf: unable to initialize frontend: Readline
+#37 4.333 debconf: (This frontend requires a controlling tty.)
+#37 4.333 debconf: falling back to frontend: Teletype
+#37 4.339 debconf: unable to initialize frontend: Teletype
+#37 4.339 debconf: (This frontend requires a controlling tty.)
+#37 4.339 debconf: falling back to frontend: Noninteractive
+#37 6.539 Fetched 127 MB in 1s (152 MB/s)
+#37 6.580 Selecting previously unselected package libsystemd-shared:amd64.
+#37 6.580 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26761 files and directories currently installed.)
+#37 6.658 Preparing to unpack .../libsystemd-shared_257.8-1~deb13u2_amd64.deb ...
+#37 6.661 Unpacking libsystemd-shared:amd64 (257.8-1~deb13u2) ...
+#37 6.784 Selecting previously unselected package libapparmor1:amd64.
+#37 6.787 Preparing to unpack .../libapparmor1_4.1.0-1_amd64.deb ...
+#37 6.792 Unpacking libapparmor1:amd64 (4.1.0-1) ...
+#37 6.824 Preparing to unpack .../libsystemd0_257.8-1~deb13u2_amd64.deb ...
+#37 6.832 Unpacking libsystemd0:amd64 (257.8-1~deb13u2) over (257.8-1~deb13u1) ...
+#37 6.940 Setting up libsystemd0:amd64 (257.8-1~deb13u2) ...
+#37 6.948 Setting up libsystemd-shared:amd64 (257.8-1~deb13u2) ...
+#37 6.990 Selecting previously unselected package systemd.
+#37 6.990 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26774 files and directories currently installed.)
+#37 7.008 Preparing to unpack .../systemd_257.8-1~deb13u2_amd64.deb ...
+#37 7.024 Unpacking systemd (257.8-1~deb13u2) ...
+#37 7.441 Setting up libapparmor1:amd64 (4.1.0-1) ...
+#37 7.454 Setting up systemd (257.8-1~deb13u2) ...
+#37 7.500 Created symlink '/etc/systemd/system/getty.target.wants/getty@tty1.service' → '/usr/lib/systemd/system/getty@.service'.
+#37 7.506 Created symlink '/etc/systemd/system/multi-user.target.wants/remote-fs.target' → '/usr/lib/systemd/system/remote-fs.target'.
+#37 7.512 Created symlink '/etc/systemd/system/sysinit.target.wants/systemd-pstore.service' → '/usr/lib/systemd/system/systemd-pstore.service'.
+#37 7.516 Initializing machine ID from random generator.
+#37 7.542 Creating group 'systemd-journal' with GID 999.
+#37 7.542 Creating group 'systemd-network' with GID 998.
+#37 7.542 Creating user 'systemd-network' (systemd Network Management) with UID 998 and GID 998.
+#37 7.561 /usr/lib/tmpfiles.d/legacy.conf:14: Duplicate line for path "/run/lock", ignoring.
+#37 7.615 Selecting previously unselected package systemd-sysv.
+#37 7.615 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27700 files and directories currently installed.)
+#37 7.643 Preparing to unpack .../0-systemd-sysv_257.8-1~deb13u2_amd64.deb ...
+#37 7.647 Unpacking systemd-sysv (257.8-1~deb13u2) ...
+#37 7.694 Selecting previously unselected package libdbus-1-3:amd64.
+#37 7.697 Preparing to unpack .../1-libdbus-1-3_1.16.2-2_amd64.deb ...
+#37 7.700 Unpacking libdbus-1-3:amd64 (1.16.2-2) ...
+#37 7.730 Selecting previously unselected package dbus-bin.
+#37 7.733 Preparing to unpack .../2-dbus-bin_1.16.2-2_amd64.deb ...
+#37 7.735 Unpacking dbus-bin (1.16.2-2) ...
+#37 7.764 Selecting previously unselected package dbus-session-bus-common.
+#37 7.767 Preparing to unpack .../3-dbus-session-bus-common_1.16.2-2_all.deb ...
+#37 7.770 Unpacking dbus-session-bus-common (1.16.2-2) ...
+#37 7.796 Selecting previously unselected package dbus-daemon.
+#37 7.800 Preparing to unpack .../4-dbus-daemon_1.16.2-2_amd64.deb ...
+#37 7.802 Unpacking dbus-daemon (1.16.2-2) ...
+#37 7.837 Selecting previously unselected package dbus-system-bus-common.
+#37 7.840 Preparing to unpack .../5-dbus-system-bus-common_1.16.2-2_all.deb ...
+#37 7.842 Unpacking dbus-system-bus-common (1.16.2-2) ...
+#37 7.875 Selecting previously unselected package dbus.
+#37 7.878 Preparing to unpack .../6-dbus_1.16.2-2_amd64.deb ...
+#37 7.882 Unpacking dbus (1.16.2-2) ...
+#37 7.918 Preparing to unpack .../7-libudev1_257.8-1~deb13u2_amd64.deb ...
+#37 7.927 Unpacking libudev1:amd64 (257.8-1~deb13u2) over (257.8-1~deb13u1) ...
+#37 7.992 Setting up libudev1:amd64 (257.8-1~deb13u2) ...
+#37 8.036 Selecting previously unselected package linux-sysctl-defaults.
+#37 8.036 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27793 files and directories currently installed.)
+#37 8.057 Preparing to unpack .../00-linux-sysctl-defaults_4.12_all.deb ...
+#37 8.060 Unpacking linux-sysctl-defaults (4.12) ...
+#37 8.093 Selecting previously unselected package libnss-systemd:amd64.
+#37 8.096 Preparing to unpack .../01-libnss-systemd_257.8-1~deb13u2_amd64.deb ...
+#37 8.103 Unpacking libnss-systemd:amd64 (257.8-1~deb13u2) ...
+#37 8.139 Selecting previously unselected package libpam-systemd:amd64.
+#37 8.142 Preparing to unpack .../02-libpam-systemd_257.8-1~deb13u2_amd64.deb ...
+#37 8.145 Unpacking libpam-systemd:amd64 (257.8-1~deb13u2) ...
+#37 8.189 Selecting previously unselected package systemd-timesyncd.
+#37 8.192 Preparing to unpack .../03-systemd-timesyncd_257.8-1~deb13u2_amd64.deb ...
+#37 8.195 Unpacking systemd-timesyncd (257.8-1~deb13u2) ...
+#37 8.230 Selecting previously unselected package gtk-update-icon-cache.
+#37 8.233 Preparing to unpack .../04-gtk-update-icon-cache_4.18.6+ds-2_amd64.deb ...
+#37 8.243 No diversion 'diversion of /usr/sbin/update-icon-caches to /usr/sbin/update-icon-caches.gtk2 by libgtk-3-bin', none removed.
+#37 8.249 No diversion 'diversion of /usr/share/man/man8/update-icon-caches.8.gz to /usr/share/man/man8/update-icon-caches.gtk2.8.gz by libgtk-3-bin', none removed.
+#37 8.250 Unpacking gtk-update-icon-cache (4.18.6+ds-2) ...
+#37 8.282 Selecting previously unselected package adwaita-icon-theme.
+#37 8.285 Preparing to unpack .../05-adwaita-icon-theme_48.1-1_all.deb ...
+#37 8.287 Unpacking adwaita-icon-theme (48.1-1) ...
+#37 8.490 Selecting previously unselected package alsa-topology-conf.
+#37 8.494 Preparing to unpack .../06-alsa-topology-conf_1.2.5.1-3_all.deb ...
+#37 8.497 Unpacking alsa-topology-conf (1.2.5.1-3) ...
+#37 8.525 Selecting previously unselected package libasound2-data.
+#37 8.528 Preparing to unpack .../07-libasound2-data_1.2.14-1_all.deb ...
+#37 8.531 Unpacking libasound2-data (1.2.14-1) ...
+#37 8.585 Selecting previously unselected package libasound2t64:amd64.
+#37 8.587 Preparing to unpack .../08-libasound2t64_1.2.14-1_amd64.deb ...
+#37 8.590 Unpacking libasound2t64:amd64 (1.2.14-1) ...
+#37 8.643 Selecting previously unselected package alsa-ucm-conf.
+#37 8.646 Preparing to unpack .../09-alsa-ucm-conf_1.2.14-1_all.deb ...
+#37 8.649 Unpacking alsa-ucm-conf (1.2.14-1) ...
+#37 8.819 Selecting previously unselected package at-spi2-common.
+#37 8.824 Preparing to unpack .../10-at-spi2-common_2.56.2-1_all.deb ...
+#37 8.827 Unpacking at-spi2-common (2.56.2-1) ...
+#37 9.051 Selecting previously unselected package libxi6:amd64.
+#37 9.054 Preparing to unpack .../11-libxi6_2%3a1.8.2-1_amd64.deb ...
+#37 9.056 Unpacking libxi6:amd64 (2:1.8.2-1) ...
+#37 9.083 Selecting previously unselected package libatspi2.0-0t64:amd64.
+#37 9.086 Preparing to unpack .../12-libatspi2.0-0t64_2.56.2-1_amd64.deb ...
+#37 9.089 Unpacking libatspi2.0-0t64:amd64 (2.56.2-1) ...
+#37 9.118 Selecting previously unselected package libxtst6:amd64.
+#37 9.121 Preparing to unpack .../13-libxtst6_2%3a1.2.5-1_amd64.deb ...
+#37 9.123 Unpacking libxtst6:amd64 (2:1.2.5-1) ...
+#37 9.151 Selecting previously unselected package dbus-user-session.
+#37 9.154 Preparing to unpack .../14-dbus-user-session_1.16.2-2_amd64.deb ...
+#37 9.157 Unpacking dbus-user-session (1.16.2-2) ...
+#37 9.192 Selecting previously unselected package libdconf1:amd64.
+#37 9.197 Preparing to unpack .../15-libdconf1_0.40.0-5_amd64.deb ...
+#37 9.201 Unpacking libdconf1:amd64 (0.40.0-5) ...
+#37 9.262 Selecting previously unselected package dconf-service.
+#37 9.266 Preparing to unpack .../16-dconf-service_0.40.0-5_amd64.deb ...
+#37 9.270 Unpacking dconf-service (0.40.0-5) ...
+#37 9.314 Selecting previously unselected package dconf-gsettings-backend:amd64.
+#37 9.317 Preparing to unpack .../17-dconf-gsettings-backend_0.40.0-5_amd64.deb ...
+#37 9.321 Unpacking dconf-gsettings-backend:amd64 (0.40.0-5) ...
+#37 9.368 Selecting previously unselected package gsettings-desktop-schemas.
+#37 9.372 Preparing to unpack .../18-gsettings-desktop-schemas_48.0-1_all.deb ...
+#37 9.377 Unpacking gsettings-desktop-schemas (48.0-1) ...
+#37 9.501 Selecting previously unselected package at-spi2-core.
+#37 9.507 Preparing to unpack .../19-at-spi2-core_2.56.2-1_amd64.deb ...
+#37 9.510 Unpacking at-spi2-core (2.56.2-1) ...
+#37 9.550 Selecting previously unselected package ca-certificates-java.
+#37 9.553 Preparing to unpack .../20-ca-certificates-java_20240118_all.deb ...
+#37 9.560 Unpacking ca-certificates-java (20240118) ...
+#37 9.600 Selecting previously unselected package java-common.
+#37 9.604 Preparing to unpack .../21-java-common_0.76_all.deb ...
+#37 9.608 Unpacking java-common (0.76) ...
+#37 9.643 Selecting previously unselected package libnspr4:amd64.
+#37 9.648 Preparing to unpack .../22-libnspr4_2%3a4.36-1_amd64.deb ...
+#37 9.650 Unpacking libnspr4:amd64 (2:4.36-1) ...
+#37 9.689 Selecting previously unselected package libnss3:amd64.
+#37 9.692 Preparing to unpack .../23-libnss3_2%3a3.110-1_amd64.deb ...
+#37 9.695 Unpacking libnss3:amd64 (2:3.110-1) ...
+#37 9.781 Selecting previously unselected package libpcsclite1:amd64.
+#37 9.784 Preparing to unpack .../24-libpcsclite1_2.3.3-1_amd64.deb ...
+#37 9.788 Unpacking libpcsclite1:amd64 (2.3.3-1) ...
+#37 9.822 Selecting previously unselected package openjdk-21-jre-headless:amd64.
+#37 9.825 Preparing to unpack .../25-openjdk-21-jre-headless_21.0.8+9-1_amd64.deb ...
+#37 9.828 Unpacking openjdk-21-jre-headless:amd64 (21.0.8+9-1) ...
+#37 12.11 Selecting previously unselected package default-jre-headless.
+#37 12.12 Preparing to unpack .../26-default-jre-headless_2%3a1.21-76_amd64.deb ...
+#37 12.12 Unpacking default-jre-headless (2:1.21-76) ...
+#37 12.15 Selecting previously unselected package libatk1.0-0t64:amd64.
+#37 12.15 Preparing to unpack .../27-libatk1.0-0t64_2.56.2-1_amd64.deb ...
+#37 12.15 Unpacking libatk1.0-0t64:amd64 (2.56.2-1) ...
+#37 12.18 Selecting previously unselected package libatk-bridge2.0-0t64:amd64.
+#37 12.19 Preparing to unpack .../28-libatk-bridge2.0-0t64_2.56.2-1_amd64.deb ...
+#37 12.19 Unpacking libatk-bridge2.0-0t64:amd64 (2.56.2-1) ...
+#37 12.22 Selecting previously unselected package libcloudproviders0:amd64.
+#37 12.23 Preparing to unpack .../29-libcloudproviders0_0.3.6-2_amd64.deb ...
+#37 12.23 Unpacking libcloudproviders0:amd64 (0.3.6-2) ...
+#37 12.26 Selecting previously unselected package libcolord2:amd64.
+#37 12.26 Preparing to unpack .../30-libcolord2_1.4.7-3_amd64.deb ...
+#37 12.27 Unpacking libcolord2:amd64 (1.4.7-3) ...
+#37 12.30 Selecting previously unselected package libavahi-common-data:amd64.
+#37 12.30 Preparing to unpack .../31-libavahi-common-data_0.8-16_amd64.deb ...
+#37 12.31 Unpacking libavahi-common-data:amd64 (0.8-16) ...
+#37 12.36 Selecting previously unselected package libavahi-common3:amd64.
+#37 12.36 Preparing to unpack .../32-libavahi-common3_0.8-16_amd64.deb ...
+#37 12.37 Unpacking libavahi-common3:amd64 (0.8-16) ...
+#37 12.40 Selecting previously unselected package libavahi-client3:amd64.
+#37 12.40 Preparing to unpack .../33-libavahi-client3_0.8-16_amd64.deb ...
+#37 12.40 Unpacking libavahi-client3:amd64 (0.8-16) ...
+#37 12.43 Selecting previously unselected package libcups2t64:amd64.
+#37 12.44 Preparing to unpack .../34-libcups2t64_2.4.10-3+deb13u1_amd64.deb ...
+#37 12.44 Unpacking libcups2t64:amd64 (2.4.10-3+deb13u1) ...
+#37 12.48 Selecting previously unselected package libepoxy0:amd64.
+#37 12.48 Preparing to unpack .../35-libepoxy0_1.5.10-2_amd64.deb ...
+#37 12.49 Unpacking libepoxy0:amd64 (1.5.10-2) ...
+#37 12.53 Selecting previously unselected package libwayland-client0:amd64.
+#37 12.53 Preparing to unpack .../36-libwayland-client0_1.23.1-3_amd64.deb ...
+#37 12.53 Unpacking libwayland-client0:amd64 (1.23.1-3) ...
+#37 12.56 Selecting previously unselected package libwayland-cursor0:amd64.
+#37 12.57 Preparing to unpack .../37-libwayland-cursor0_1.23.1-3_amd64.deb ...
+#37 12.57 Unpacking libwayland-cursor0:amd64 (1.23.1-3) ...
+#37 12.60 Selecting previously unselected package libwayland-egl1:amd64.
+#37 12.60 Preparing to unpack .../38-libwayland-egl1_1.23.1-3_amd64.deb ...
+#37 12.60 Unpacking libwayland-egl1:amd64 (1.23.1-3) ...
+#37 12.63 Selecting previously unselected package libxcomposite1:amd64.
+#37 12.64 Preparing to unpack .../39-libxcomposite1_1%3a0.4.6-1_amd64.deb ...
+#37 12.64 Unpacking libxcomposite1:amd64 (1:0.4.6-1) ...
+#37 12.67 Selecting previously unselected package libxfixes3:amd64.
+#37 12.68 Preparing to unpack .../40-libxfixes3_1%3a6.0.0-2+b4_amd64.deb ...
+#37 12.68 Unpacking libxfixes3:amd64 (1:6.0.0-2+b4) ...
+#37 12.71 Selecting previously unselected package libxcursor1:amd64.
+#37 12.72 Preparing to unpack .../41-libxcursor1_1%3a1.2.3-1_amd64.deb ...
+#37 12.72 Unpacking libxcursor1:amd64 (1:1.2.3-1) ...
+#37 12.78 Selecting previously unselected package libxdamage1:amd64.
+#37 12.78 Preparing to unpack .../42-libxdamage1_1%3a1.1.6-1+b2_amd64.deb ...
+#37 12.78 Unpacking libxdamage1:amd64 (1:1.1.6-1+b2) ...
+#37 12.81 Selecting previously unselected package libxinerama1:amd64.
+#37 12.82 Preparing to unpack .../43-libxinerama1_2%3a1.1.4-3+b4_amd64.deb ...
+#37 12.82 Unpacking libxinerama1:amd64 (2:1.1.4-3+b4) ...
+#37 12.84 Selecting previously unselected package xkb-data.
+#37 12.85 Preparing to unpack .../44-xkb-data_2.42-1_all.deb ...
+#37 12.85 Unpacking xkb-data (2.42-1) ...
+#37 12.98 Selecting previously unselected package libxkbcommon0:amd64.
+#37 12.99 Preparing to unpack .../45-libxkbcommon0_1.7.0-2_amd64.deb ...
+#37 12.99 Unpacking libxkbcommon0:amd64 (1.7.0-2) ...
+#37 13.03 Selecting previously unselected package libxrandr2:amd64.
+#37 13.03 Preparing to unpack .../46-libxrandr2_2%3a1.5.4-1+b3_amd64.deb ...
+#37 13.04 Unpacking libxrandr2:amd64 (2:1.5.4-1+b3) ...
+#37 13.07 Selecting previously unselected package libgtk-3-common.
+#37 13.07 Preparing to unpack .../47-libgtk-3-common_3.24.49-3_all.deb ...
+#37 13.07 Unpacking libgtk-3-common (3.24.49-3) ...
+#37 13.41 Selecting previously unselected package libgtk-3-0t64:amd64.
+#37 13.41 Preparing to unpack .../48-libgtk-3-0t64_3.24.49-3_amd64.deb ...
+#37 13.42 Unpacking libgtk-3-0t64:amd64 (3.24.49-3) ...
+#37 13.57 Selecting previously unselected package libglvnd0:amd64.
+#37 13.58 Preparing to unpack .../49-libglvnd0_1.7.0-1+b2_amd64.deb ...
+#37 13.58 Unpacking libglvnd0:amd64 (1.7.0-1+b2) ...
+#37 13.61 Selecting previously unselected package libdrm-common.
+#37 13.61 Preparing to unpack .../50-libdrm-common_2.4.124-2_all.deb ...
+#37 13.62 Unpacking libdrm-common (2.4.124-2) ...
+#37 13.64 Selecting previously unselected package libdrm2:amd64.
+#37 13.65 Preparing to unpack .../51-libdrm2_2.4.124-2_amd64.deb ...
+#37 13.65 Unpacking libdrm2:amd64 (2.4.124-2) ...
+#37 13.68 Selecting previously unselected package libx11-xcb1:amd64.
+#37 13.69 Preparing to unpack .../52-libx11-xcb1_2%3a1.8.12-1_amd64.deb ...
+#37 13.69 Unpacking libx11-xcb1:amd64 (2:1.8.12-1) ...
+#37 13.72 Selecting previously unselected package libxcb-dri3-0:amd64.
+#37 13.73 Preparing to unpack .../53-libxcb-dri3-0_1.17.0-2+b1_amd64.deb ...
+#37 13.73 Unpacking libxcb-dri3-0:amd64 (1.17.0-2+b1) ...
+#37 13.76 Selecting previously unselected package libxcb-glx0:amd64.
+#37 13.77 Preparing to unpack .../54-libxcb-glx0_1.17.0-2+b1_amd64.deb ...
+#37 13.77 Unpacking libxcb-glx0:amd64 (1.17.0-2+b1) ...
+#37 13.80 Selecting previously unselected package libxcb-present0:amd64.
+#37 13.81 Preparing to unpack .../55-libxcb-present0_1.17.0-2+b1_amd64.deb ...
+#37 13.81 Unpacking libxcb-present0:amd64 (1.17.0-2+b1) ...
+#37 13.84 Selecting previously unselected package libxcb-xfixes0:amd64.
+#37 13.85 Preparing to unpack .../56-libxcb-xfixes0_1.17.0-2+b1_amd64.deb ...
+#37 13.85 Unpacking libxcb-xfixes0:amd64 (1.17.0-2+b1) ...
+#37 13.89 Selecting previously unselected package libxxf86vm1:amd64.
+#37 13.90 Preparing to unpack .../57-libxxf86vm1_1%3a1.1.4-1+b4_amd64.deb ...
+#37 13.90 Unpacking libxxf86vm1:amd64 (1:1.1.4-1+b4) ...
+#37 13.97 Selecting previously unselected package libdrm-amdgpu1:amd64.
+#37 13.97 Preparing to unpack .../58-libdrm-amdgpu1_2.4.124-2_amd64.deb ...
+#37 13.98 Unpacking libdrm-amdgpu1:amd64 (2.4.124-2) ...
+#37 14.01 Selecting previously unselected package libpciaccess0:amd64.
+#37 14.01 Preparing to unpack .../59-libpciaccess0_0.17-3+b3_amd64.deb ...
+#37 14.02 Unpacking libpciaccess0:amd64 (0.17-3+b3) ...
+#37 14.05 Selecting previously unselected package libdrm-intel1:amd64.
+#37 14.05 Preparing to unpack .../60-libdrm-intel1_2.4.124-2_amd64.deb ...
+#37 14.05 Unpacking libdrm-intel1:amd64 (2.4.124-2) ...
+#37 14.08 Selecting previously unselected package libz3-4:amd64.
+#37 14.09 Preparing to unpack .../61-libz3-4_4.13.3-1_amd64.deb ...
+#37 14.09 Unpacking libz3-4:amd64 (4.13.3-1) ...
+#37 14.47 Selecting previously unselected package libllvm19:amd64.
+#37 14.47 Preparing to unpack .../62-libllvm19_1%3a19.1.7-3+b1_amd64.deb ...
+#37 14.48 Unpacking libllvm19:amd64 (1:19.1.7-3+b1) ...
+#37 17.50 Selecting previously unselected package libsensors-config.
+#37 17.50 Preparing to unpack .../63-libsensors-config_1%3a3.6.2-2_all.deb ...
+#37 17.50 Unpacking libsensors-config (1:3.6.2-2) ...
+#37 17.53 Selecting previously unselected package libsensors5:amd64.
+#37 17.54 Preparing to unpack .../64-libsensors5_1%3a3.6.2-2_amd64.deb ...
+#37 17.54 Unpacking libsensors5:amd64 (1:3.6.2-2) ...
+#37 17.57 Selecting previously unselected package libxcb-randr0:amd64.
+#37 17.57 Preparing to unpack .../65-libxcb-randr0_1.17.0-2+b1_amd64.deb ...
+#37 17.58 Unpacking libxcb-randr0:amd64 (1.17.0-2+b1) ...
+#37 17.61 Selecting previously unselected package libxcb-sync1:amd64.
+#37 17.61 Preparing to unpack .../66-libxcb-sync1_1.17.0-2+b1_amd64.deb ...
+#37 17.61 Unpacking libxcb-sync1:amd64 (1.17.0-2+b1) ...
+#37 17.65 Selecting previously unselected package libxshmfence1:amd64.
+#37 17.65 Preparing to unpack .../67-libxshmfence1_1.3.3-1_amd64.deb ...
+#37 17.65 Unpacking libxshmfence1:amd64 (1.3.3-1) ...
+#37 17.68 Selecting previously unselected package mesa-libgallium:amd64.
+#37 17.68 Preparing to unpack .../68-mesa-libgallium_25.0.7-2_amd64.deb ...
+#37 17.69 Unpacking mesa-libgallium:amd64 (25.0.7-2) ...
+#37 18.14 Selecting previously unselected package libwayland-server0:amd64.
+#37 18.15 Preparing to unpack .../69-libwayland-server0_1.23.1-3_amd64.deb ...
+#37 18.15 Unpacking libwayland-server0:amd64 (1.23.1-3) ...
+#37 18.18 Selecting previously unselected package libgbm1:amd64.
+#37 18.19 Preparing to unpack .../70-libgbm1_25.0.7-2_amd64.deb ...
+#37 18.19 Unpacking libgbm1:amd64 (25.0.7-2) ...
+#37 18.23 Selecting previously unselected package libvulkan1:amd64.
+#37 18.24 Preparing to unpack .../71-libvulkan1_1.4.309.0-1_amd64.deb ...
+#37 18.24 Unpacking libvulkan1:amd64 (1.4.309.0-1) ...
+#37 18.28 Selecting previously unselected package libgl1-mesa-dri:amd64.
+#37 18.28 Preparing to unpack .../72-libgl1-mesa-dri_25.0.7-2_amd64.deb ...
+#37 18.29 Unpacking libgl1-mesa-dri:amd64 (25.0.7-2) ...
+#37 18.33 Selecting previously unselected package libglx-mesa0:amd64.
+#37 18.33 Preparing to unpack .../73-libglx-mesa0_25.0.7-2_amd64.deb ...
+#37 18.33 Unpacking libglx-mesa0:amd64 (25.0.7-2) ...
+#37 18.37 Selecting previously unselected package libglx0:amd64.
+#37 18.37 Preparing to unpack .../74-libglx0_1.7.0-1+b2_amd64.deb ...
+#37 18.38 Unpacking libglx0:amd64 (1.7.0-1+b2) ...
+#37 18.41 Selecting previously unselected package libgl1:amd64.
+#37 18.41 Preparing to unpack .../75-libgl1_1.7.0-1+b2_amd64.deb ...
+#37 18.42 Unpacking libgl1:amd64 (1.7.0-1+b2) ...
+#37 18.46 Selecting previously unselected package libgif7:amd64.
+#37 18.46 Preparing to unpack .../76-libgif7_5.2.2-1+b1_amd64.deb ...
+#37 18.47 Unpacking libgif7:amd64 (5.2.2-1+b1) ...
+#37 18.50 Selecting previously unselected package openjdk-21-jre:amd64.
+#37 18.50 Preparing to unpack .../77-openjdk-21-jre_21.0.8+9-1_amd64.deb ...
+#37 18.51 Unpacking openjdk-21-jre:amd64 (21.0.8+9-1) ...
+#37 18.56 Selecting previously unselected package default-jre.
+#37 18.56 Preparing to unpack .../78-default-jre_2%3a1.21-76_amd64.deb ...
+#37 18.57 Unpacking default-jre (2:1.21-76) ...
+#37 18.59 Selecting previously unselected package libdevmapper1.02.1:amd64.
+#37 18.60 Preparing to unpack .../79-libdevmapper1.02.1_2%3a1.02.205-2_amd64.deb ...
+#37 18.60 Unpacking libdevmapper1.02.1:amd64 (2:1.02.205-2) ...
+#37 18.64 Selecting previously unselected package dmsetup.
+#37 18.64 Preparing to unpack .../80-dmsetup_2%3a1.02.205-2_amd64.deb ...
+#37 18.65 Unpacking dmsetup (2:1.02.205-2) ...
+#37 18.69 Selecting previously unselected package fonts-dejavu-extra.
+#37 18.69 Preparing to unpack .../81-fonts-dejavu-extra_2.37-8_all.deb ...
+#37 18.69 Unpacking fonts-dejavu-extra (2.37-8) ...
+#37 18.82 Selecting previously unselected package libxmu6:amd64.
+#37 18.82 Preparing to unpack .../82-libxmu6_2%3a1.1.3-3+b4_amd64.deb ...
+#37 18.82 Unpacking libxmu6:amd64 (2:1.1.3-3+b4) ...
+#37 18.85 Selecting previously unselected package libxpm4:amd64.
+#37 18.86 Preparing to unpack .../83-libxpm4_1%3a3.5.17-1+b3_amd64.deb ...
+#37 18.86 Unpacking libxpm4:amd64 (1:3.5.17-1+b3) ...
+#37 18.89 Selecting previously unselected package libxaw7:amd64.
+#37 18.89 Preparing to unpack .../84-libxaw7_2%3a1.0.16-1_amd64.deb ...
+#37 18.90 Unpacking libxaw7:amd64 (2:1.0.16-1) ...
+#37 18.94 Selecting previously unselected package libxcb-shape0:amd64.
+#37 18.95 Preparing to unpack .../85-libxcb-shape0_1.17.0-2+b1_amd64.deb ...
+#37 18.95 Unpacking libxcb-shape0:amd64 (1.17.0-2+b1) ...
+#37 19.00 Selecting previously unselected package libxkbfile1:amd64.
+#37 19.01 Preparing to unpack .../86-libxkbfile1_1%3a1.1.0-1+b4_amd64.deb ...
+#37 19.01 Unpacking libxkbfile1:amd64 (1:1.1.0-1+b4) ...
+#37 19.05 Selecting previously unselected package libxmuu1:amd64.
+#37 19.06 Preparing to unpack .../87-libxmuu1_2%3a1.1.3-3+b4_amd64.deb ...
+#37 19.06 Unpacking libxmuu1:amd64 (2:1.1.3-3+b4) ...
+#37 19.09 Selecting previously unselected package libxv1:amd64.
+#37 19.09 Preparing to unpack .../88-libxv1_2%3a1.0.11-1.1+b3_amd64.deb ...
+#37 19.10 Unpacking libxv1:amd64 (2:1.0.11-1.1+b3) ...
+#37 19.13 Selecting previously unselected package libxxf86dga1:amd64.
+#37 19.13 Preparing to unpack .../89-libxxf86dga1_2%3a1.1.5-1+b3_amd64.deb ...
+#37 19.13 Unpacking libxxf86dga1:amd64 (2:1.1.5-1+b3) ...
+#37 19.16 Selecting previously unselected package x11-utils.
+#37 19.17 Preparing to unpack .../90-x11-utils_7.7+7_amd64.deb ...
+#37 19.17 Unpacking x11-utils (7.7+7) ...
+#37 19.21 Selecting previously unselected package libatk-wrapper-java.
+#37 19.21 Preparing to unpack .../91-libatk-wrapper-java_0.40.0-3_all.deb ...
+#37 19.21 Unpacking libatk-wrapper-java (0.40.0-3) ...
+#37 19.24 Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+#37 19.24 Preparing to unpack .../92-libatk-wrapper-java-jni_0.40.0-3+b3_amd64.deb ...
+#37 19.25 Unpacking libatk-wrapper-java-jni:amd64 (0.40.0-3+b3) ...
+#37 19.28 Selecting previously unselected package libjson-c5:amd64.
+#37 19.28 Preparing to unpack .../93-libjson-c5_0.18+ds-1_amd64.deb ...
+#37 19.29 Unpacking libjson-c5:amd64 (0.18+ds-1) ...
+#37 19.32 Selecting previously unselected package libcryptsetup12:amd64.
+#37 19.32 Preparing to unpack .../94-libcryptsetup12_2%3a2.7.5-2_amd64.deb ...
+#37 19.33 Unpacking libcryptsetup12:amd64 (2:2.7.5-2) ...
+#37 19.36 Selecting previously unselected package libgtk-3-bin.
+#37 19.37 Preparing to unpack .../95-libgtk-3-bin_3.24.49-3_amd64.deb ...
+#37 19.37 Unpacking libgtk-3-bin (3.24.49-3) ...
+#37 19.41 Selecting previously unselected package libkmod2:amd64.
+#37 19.42 Preparing to unpack .../96-libkmod2_34.2-2_amd64.deb ...
+#37 19.42 Unpacking libkmod2:amd64 (34.2-2) ...
+#37 19.46 Selecting previously unselected package luit.
+#37 19.47 Preparing to unpack .../97-luit_2.0.20240910-1_amd64.deb ...
+#37 19.48 Adding 'diversion of /usr/bin/luit to /usr/bin/luit.x11-utils by luit'
+#37 19.50 Adding 'diversion of /usr/share/man/man1/luit.1.gz to /usr/share/man/man1/luit.x11-utils.1.gz by luit'
+#37 19.51 Unpacking luit (2.0.20240910-1) ...
+#37 19.54 Selecting previously unselected package mesa-vulkan-drivers:amd64.
+#37 19.55 Preparing to unpack .../98-mesa-vulkan-drivers_25.0.7-2_amd64.deb ...
+#37 19.55 Unpacking mesa-vulkan-drivers:amd64 (25.0.7-2) ...
+#37 22.59 Selecting previously unselected package systemd-cryptsetup.
+#37 22.59 Preparing to unpack .../99-systemd-cryptsetup_257.8-1~deb13u2_amd64.deb ...
+#37 22.59 Unpacking systemd-cryptsetup (257.8-1~deb13u2) ...
+#37 22.66 Setting up libxcb-dri3-0:amd64 (1.17.0-2+b1) ...
+#37 22.67 Setting up libwayland-server0:amd64 (1.23.1-3) ...
+#37 22.68 Setting up gtk-update-icon-cache (4.18.6+ds-2) ...
+#37 22.68 Setting up libx11-xcb1:amd64 (2:1.8.12-1) ...
+#37 22.69 Setting up libpciaccess0:amd64 (0.17-3+b3) ...
+#37 22.70 Setting up luit (2.0.20240910-1) ...
+#37 22.71 Setting up systemd-sysv (257.8-1~deb13u2) ...
+#37 22.74 Setting up libxmu6:amd64 (2:1.1.3-3+b4) ...
+#37 22.74 Setting up libxdamage1:amd64 (1:1.1.6-1+b2) ...
+#37 22.75 Setting up libxcb-xfixes0:amd64 (1.17.0-2+b1) ...
+#37 22.76 Setting up libxpm4:amd64 (1:3.5.17-1+b3) ...
+#37 22.77 Setting up libxi6:amd64 (2:1.8.2-1) ...
+#37 22.78 Setting up java-common (0.76) ...
+#37 22.80 Setting up libglvnd0:amd64 (1.7.0-1+b2) ...
+#37 22.80 Setting up libxtst6:amd64 (2:1.2.5-1) ...
+#37 22.81 Setting up libxcb-glx0:amd64 (1.17.0-2+b1) ...
+#37 22.82 Setting up libxcb-shape0:amd64 (1.17.0-2+b1) ...
+#37 22.83 Setting up libsensors-config (1:3.6.2-2) ...
+#37 22.84 Setting up libxxf86dga1:amd64 (2:1.1.5-1+b3) ...
+#37 22.85 Setting up libcloudproviders0:amd64 (0.3.6-2) ...
+#37 22.86 Setting up libnss-systemd:amd64 (257.8-1~deb13u2) ...
+#37 22.88 Setting up xkb-data (2.42-1) ...
+#37 22.89 Setting up libxaw7:amd64 (2:1.0.16-1) ...
+#37 22.90 Setting up libcolord2:amd64 (1.4.7-3) ...
+#37 22.90 Setting up libxxf86vm1:amd64 (1:1.1.4-1+b4) ...
+#37 22.91 Setting up libxcb-present0:amd64 (1.17.0-2+b1) ...
+#37 22.92 Setting up libdconf1:amd64 (0.40.0-5) ...
+#37 22.93 Setting up libasound2-data (1.2.14-1) ...
+#37 22.94 Setting up libz3-4:amd64 (4.13.3-1) ...
+#37 22.94 Setting up linux-sysctl-defaults (4.12) ...
+#37 22.95 Setting up libasound2t64:amd64 (1.2.14-1) ...
+#37 22.96 Setting up adwaita-icon-theme (48.1-1) ...
+#37 23.05 update-alternatives: using /usr/share/icons/Adwaita/cursor.theme to provide /usr/share/icons/default/index.theme (x-cursor-theme) in auto mode
+#37 23.06 Setting up libepoxy0:amd64 (1.5.10-2) ...
+#37 23.07 Setting up libnspr4:amd64 (2:4.36-1) ...
+#37 23.08 Setting up libxfixes3:amd64 (1:6.0.0-2+b4) ...
+#37 23.08 Setting up libxcb-sync1:amd64 (1.17.0-2+b1) ...
+#37 23.09 Setting up libavahi-common-data:amd64 (0.8-16) ...
+#37 23.10 Setting up libdbus-1-3:amd64 (1.16.2-2) ...
+#37 23.11 Setting up libxinerama1:amd64 (2:1.1.4-3+b4) ...
+#37 23.11 Setting up libxv1:amd64 (2:1.0.11-1.1+b3) ...
+#37 23.12 Setting up systemd-timesyncd (257.8-1~deb13u2) ...
+#37 23.14 Creating group 'systemd-timesync' with GID 997.
+#37 23.14 Creating user 'systemd-timesync' (systemd Time Synchronization) with UID 997 and GID 997.
+#37 23.42 Created symlink '/etc/systemd/system/dbus-org.freedesktop.timesync1.service' → '/usr/lib/systemd/system/systemd-timesyncd.service'.
+#37 23.42 Created symlink '/etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service' → '/usr/lib/systemd/system/systemd-timesyncd.service'.
+#37 23.43 Setting up libxrandr2:amd64 (2:1.5.4-1+b3) ...
+#37 23.43 Setting up libpcsclite1:amd64 (2.3.3-1) ...
+#37 23.44 Setting up libsensors5:amd64 (1:3.6.2-2) ...
+#37 23.45 Setting up libvulkan1:amd64 (1.4.309.0-1) ...
+#37 23.46 Setting up libgif7:amd64 (5.2.2-1+b1) ...
+#37 23.46 Setting up fonts-dejavu-extra (2.37-8) ...
+#37 23.47 Setting up alsa-topology-conf (1.2.5.1-3) ...
+#37 23.48 Setting up libxshmfence1:amd64 (1.3.3-1) ...
+#37 23.49 Setting up at-spi2-common (2.56.2-1) ...
+#37 23.49 Setting up libxcb-randr0:amd64 (1.17.0-2+b1) ...
+#37 23.50 Setting up dbus-session-bus-common (1.16.2-2) ...
+#37 23.51 Setting up libwayland-egl1:amd64 (1.23.1-3) ...
+#37 23.52 Setting up libxkbfile1:amd64 (1:1.1.0-1+b4) ...
+#37 23.53 Setting up ca-certificates-java (20240118) ...
+#37 23.55 No JRE found. Skipping Java certificates setup.
+#37 23.55 Setting up dbus-system-bus-common (1.16.2-2) ...
+#37 23.56 Creating group 'messagebus' with GID 996.
+#37 23.56 Creating user 'messagebus' (System Message Bus) with UID 996 and GID 996.
+#37 23.58 Setting up libdrm-common (2.4.124-2) ...
+#37 23.59 Setting up libxcomposite1:amd64 (1:0.4.6-1) ...
+#37 23.59 Setting up libjson-c5:amd64 (0.18+ds-1) ...
+#37 23.60 Setting up libxmuu1:amd64 (2:1.1.3-3+b4) ...
+#37 23.61 Setting up dbus-bin (1.16.2-2) ...
+#37 23.62 Setting up libkmod2:amd64 (34.2-2) ...
+#37 23.63 Setting up libxkbcommon0:amd64 (1.7.0-2) ...
+#37 23.63 Setting up libwayland-client0:amd64 (1.23.1-3) ...
+#37 23.64 Setting up libllvm19:amd64 (1:19.1.7-3+b1) ...
+#37 23.65 Setting up libatk1.0-0t64:amd64 (2.56.2-1) ...
+#37 23.66 Setting up alsa-ucm-conf (1.2.14-1) ...
+#37 23.67 Setting up libxcursor1:amd64 (1:1.2.3-1) ...
+#37 23.67 Setting up libavahi-common3:amd64 (0.8-16) ...
+#37 23.68 Setting up libnss3:amd64 (2:3.110-1) ...
+#37 23.69 Setting up dbus-daemon (1.16.2-2) ...
+#37 23.72 Setting up libatspi2.0-0t64:amd64 (2.56.2-1) ...
+#37 23.73 Setting up dbus (1.16.2-2) ...
+#37 23.79 invoke-rc.d: could not determine current runlevel
+#37 23.79 invoke-rc.d: policy-rc.d denied execution of start.
+#37 23.80 Setting up libdrm2:amd64 (2.4.124-2) ...
+#37 23.80 Setting up libwayland-cursor0:amd64 (1.23.1-3) ...
+#37 23.81 Setting up libpam-systemd:amd64 (257.8-1~deb13u2) ...
+#37 23.91 debconf: unable to initialize frontend: Dialog
+#37 23.91 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#37 23.91 debconf: falling back to frontend: Readline
+#37 23.92 debconf: unable to initialize frontend: Readline
+#37 23.92 debconf: (This frontend requires a controlling tty.)
+#37 23.92 debconf: falling back to frontend: Teletype
+#37 23.93 debconf: unable to initialize frontend: Teletype
+#37 23.93 debconf: (This frontend requires a controlling tty.)
+#37 23.93 debconf: falling back to frontend: Noninteractive
+#37 24.03 Setting up libavahi-client3:amd64 (0.8-16) ...
+#37 24.05 Setting up libdrm-amdgpu1:amd64 (2.4.124-2) ...
+#37 24.05 Setting up libatk-bridge2.0-0t64:amd64 (2.56.2-1) ...
+#37 24.06 Setting up mesa-vulkan-drivers:amd64 (25.0.7-2) ...
+#37 24.07 Setting up openjdk-21-jre-headless:amd64 (21.0.8+9-1) ...
+#37 24.19 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+#37 24.19 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
+#37 24.20 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+#37 24.20 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+#37 24.21 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+#37 24.23 Setting up libdrm-intel1:amd64 (2.4.124-2) ...
+#37 24.23 Setting up dbus-user-session (1.16.2-2) ...
+#37 24.24 Setting up libcups2t64:amd64 (2.4.10-3+deb13u1) ...
+#37 24.25 Setting up mesa-libgallium:amd64 (25.0.7-2) ...
+#37 24.26 Setting up libgbm1:amd64 (25.0.7-2) ...
+#37 24.27 Setting up libgl1-mesa-dri:amd64 (25.0.7-2) ...
+#37 24.28 Setting up dconf-service (0.40.0-5) ...
+#37 24.29 Setting up libglx-mesa0:amd64 (25.0.7-2) ...
+#37 24.29 Setting up libglx0:amd64 (1.7.0-1+b2) ...
+#37 24.30 Setting up dconf-gsettings-backend:amd64 (0.40.0-5) ...
+#37 24.31 Setting up libgl1:amd64 (1.7.0-1+b2) ...
+#37 24.32 Setting up x11-utils (7.7+7) ...
+#37 24.35 Setting up libatk-wrapper-java (0.40.0-3) ...
+#37 24.35 Setting up libgtk-3-common (3.24.49-3) ...
+#37 24.36 Setting up gsettings-desktop-schemas (48.0-1) ...
+#37 24.37 Setting up libatk-wrapper-java-jni:amd64 (0.40.0-3+b3) ...
+#37 24.38 Setting up dmsetup (2:1.02.205-2) ...
+#37 24.39 Setting up libdevmapper1.02.1:amd64 (2:1.02.205-2) ...
+#37 24.40 Setting up libcryptsetup12:amd64 (2:2.7.5-2) ...
+#37 24.41 Setting up systemd-cryptsetup (257.8-1~deb13u2) ...
+#37 24.42 Processing triggers for shared-mime-info (2.4-5+b2) ...
+#37 29.25 Processing triggers for procps (2:4.0.4-9) ...
+#37 29.26 procps: Applying updated sysctl configuration
+#37 29.26 sysctl: permission denied on key "kernel.core_pattern"
+#37 29.26 sysctl: permission denied on key "kernel.sysrq"
+#37 29.26 sysctl: permission denied on key "kernel.core_uses_pid"
+#37 29.26 sysctl: permission denied on key "net.ipv4.conf.default.rp_filter"
+#37 29.26 sysctl: permission denied on key "net.ipv4.conf.eth0.rp_filter"
+#37 29.26 sysctl: permission denied on key "net.ipv4.conf.lo.rp_filter"
+#37 29.26 sysctl: permission denied on key "net.ipv4.conf.default.accept_source_route"
+#37 29.26 sysctl: permission denied on key "net.ipv4.conf.eth0.accept_source_route"
+#37 29.26 sysctl: permission denied on key "net.ipv4.conf.lo.accept_source_route"
+#37 29.26 sysctl: permission denied on key "net.ipv4.conf.default.promote_secondaries"
+#37 29.27 sysctl: permission denied on key "net.ipv4.conf.eth0.promote_secondaries"
+#37 29.27 sysctl: permission denied on key "net.ipv4.conf.lo.promote_secondaries"
+#37 29.27 sysctl: permission denied on key "net.ipv4.ping_group_range", ignoring
+#37 29.27 sysctl: permission denied on key "fs.protected_hardlinks"
+#37 29.27 sysctl: permission denied on key "fs.protected_symlinks"
+#37 29.27 sysctl: permission denied on key "fs.protected_regular"
+#37 29.27 sysctl: permission denied on key "fs.protected_fifos"
+#37 29.27 sysctl: permission denied on key "vm.max_map_count"
+#37 29.27 sysctl: permission denied on key "kernel.pid_max"
+#37 29.27 Processing triggers for fontconfig (2.15.0-2.3) ...
+#37 29.39 Processing triggers for hicolor-icon-theme (0.18-2) ...
+#37 29.42 Processing triggers for libc-bin (2.41-12) ...
+#37 30.06 Processing triggers for systemd (257.8-1~deb13u2) ...
+#37 30.07 Processing triggers for libglib2.0-0t64:amd64 (2.84.4-3~deb13u1) ...
+#37 30.10 Setting up libgtk-3-0t64:amd64 (3.24.49-3) ...
+#37 30.16 Setting up at-spi2-core (2.56.2-1) ...
+#37 30.18 Setting up libgtk-3-bin (3.24.49-3) ...
+#37 30.19 Processing triggers for ca-certificates-java (20240118) ...
+#37 30.59 Adding debian:ACCVRAIZ1.pem
+#37 30.59 Adding debian:AC_RAIZ_FNMT-RCM.pem
+#37 30.62 Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+#37 30.62 Adding debian:ANF_Secure_Server_Root_CA.pem
+#37 30.63 Adding debian:Actalis_Authentication_Root_CA.pem
+#37 30.63 Adding debian:AffirmTrust_Commercial.pem
+#37 30.63 Adding debian:AffirmTrust_Networking.pem
+#37 30.64 Adding debian:AffirmTrust_Premium.pem
+#37 30.64 Adding debian:AffirmTrust_Premium_ECC.pem
+#37 30.64 Adding debian:Amazon_Root_CA_1.pem
+#37 30.65 Adding debian:Amazon_Root_CA_2.pem
+#37 30.65 Adding debian:Amazon_Root_CA_3.pem
+#37 30.65 Adding debian:Amazon_Root_CA_4.pem
+#37 30.65 Adding debian:Atos_TrustedRoot_2011.pem
+#37 30.65 Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+#37 30.66 Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
+#37 30.66 Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+#37 30.66 Adding debian:BJCA_Global_Root_CA1.pem
+#37 30.67 Adding debian:BJCA_Global_Root_CA2.pem
+#37 30.67 Adding debian:Baltimore_CyberTrust_Root.pem
+#37 30.67 Adding debian:Buypass_Class_2_Root_CA.pem
+#37 30.68 Adding debian:Buypass_Class_3_Root_CA.pem
+#37 30.68 Adding debian:CA_Disig_Root_R2.pem
+#37 30.68 Adding debian:CFCA_EV_ROOT.pem
+#37 30.69 Adding debian:COMODO_Certification_Authority.pem
+#37 30.69 Adding debian:COMODO_ECC_Certification_Authority.pem
+#37 30.69 Adding debian:COMODO_RSA_Certification_Authority.pem
+#37 30.69 Adding debian:Certainly_Root_E1.pem
+#37 30.70 Adding debian:Certainly_Root_R1.pem
+#37 30.70 Adding debian:Certigna.pem
+#37 30.70 Adding debian:Certigna_Root_CA.pem
+#37 30.71 Adding debian:Certum_EC-384_CA.pem
+#37 30.71 Adding debian:Certum_Trusted_Network_CA.pem
+#37 30.71 Adding debian:Certum_Trusted_Network_CA_2.pem
+#37 30.72 Adding debian:Certum_Trusted_Root_CA.pem
+#37 30.72 Adding debian:CommScope_Public_Trust_ECC_Root-01.pem
+#37 30.72 Adding debian:CommScope_Public_Trust_ECC_Root-02.pem
+#37 30.72 Adding debian:CommScope_Public_Trust_RSA_Root-01.pem
+#37 30.73 Adding debian:CommScope_Public_Trust_RSA_Root-02.pem
+#37 30.73 Adding debian:Comodo_AAA_Services_root.pem
+#37 30.73 Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+#37 30.74 Adding debian:D-TRUST_BR_Root_CA_2_2023.pem
+#37 30.74 Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+#37 30.74 Adding debian:D-TRUST_EV_Root_CA_2_2023.pem
+#37 30.75 Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+#37 30.75 Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+#37 30.75 Adding debian:DigiCert_Assured_ID_Root_CA.pem
+#37 30.75 Adding debian:DigiCert_Assured_ID_Root_G2.pem
+#37 30.75 Adding debian:DigiCert_Assured_ID_Root_G3.pem
+#37 30.76 Adding debian:DigiCert_Global_Root_CA.pem
+#37 30.76 Adding debian:DigiCert_Global_Root_G2.pem
+#37 30.76 Adding debian:DigiCert_Global_Root_G3.pem
+#37 30.76 Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+#37 30.76 Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+#37 30.77 Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+#37 30.77 Adding debian:DigiCert_Trusted_Root_G4.pem
+#37 30.77 Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+#37 30.78 Adding debian:Entrust_Root_Certification_Authority.pem
+#37 30.78 Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+#37 30.78 Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+#37 30.78 Adding debian:FIRMAPROFESIONAL_CA_ROOT-A_WEB.pem
+#37 30.79 Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+#37 30.79 Adding debian:GLOBALTRUST_2020.pem
+#37 30.80 Adding debian:GTS_Root_R1.pem
+#37 30.80 Adding debian:GTS_Root_R2.pem
+#37 30.80 Adding debian:GTS_Root_R3.pem
+#37 30.80 Adding debian:GTS_Root_R4.pem
+#37 30.80 Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+#37 30.81 Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+#37 30.81 Adding debian:GlobalSign_Root_CA.pem
+#37 30.81 Adding debian:GlobalSign_Root_CA_-_R3.pem
+#37 30.82 Adding debian:GlobalSign_Root_CA_-_R6.pem
+#37 30.82 Adding debian:GlobalSign_Root_E46.pem
+#37 30.82 Adding debian:GlobalSign_Root_R46.pem
+#37 30.83 Adding debian:Go_Daddy_Class_2_CA.pem
+#37 30.83 Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+#37 30.83 Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+#37 30.84 Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+#37 30.84 Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+#37 30.85 Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+#37 30.85 Adding debian:HiPKI_Root_CA_-_G1.pem
+#37 30.85 Adding debian:Hongkong_Post_Root_CA_3.pem
+#37 30.86 Adding debian:ISRG_Root_X1.pem
+#37 30.86 Adding debian:ISRG_Root_X2.pem
+#37 30.87 Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+#37 30.87 Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+#37 30.87 Adding debian:Izenpe.com.pem
+#37 30.88 Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+#37 30.88 Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+#37 30.88 Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+#37 30.89 Adding debian:NAVER_Global_Root_Certification_Authority.pem
+#37 30.89 Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+#37 30.90 Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+#37 30.90 Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+#37 30.90 Adding debian:QuoVadis_Root_CA_1_G3.pem
+#37 30.91 Adding debian:QuoVadis_Root_CA_2.pem
+#37 30.92 Adding debian:QuoVadis_Root_CA_2_G3.pem
+#37 30.92 Adding debian:QuoVadis_Root_CA_3.pem
+#37 30.93 Adding debian:QuoVadis_Root_CA_3_G3.pem
+#37 30.93 Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+#37 30.93 Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+#37 30.94 Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+#37 30.94 Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+#37 30.94 Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+#37 30.95 Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+#37 30.95 Adding debian:SZAFIR_ROOT_CA2.pem
+#37 30.96 Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
+#37 30.96 Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+#37 30.96 Adding debian:SecureSign_Root_CA12.pem
+#37 30.97 Adding debian:SecureSign_Root_CA14.pem
+#37 30.97 Adding debian:SecureSign_Root_CA15.pem
+#37 30.97 Adding debian:SecureTrust_CA.pem
+#37 30.98 Adding debian:Secure_Global_CA.pem
+#37 30.98 Adding debian:Security_Communication_ECC_RootCA1.pem
+#37 30.98 Adding debian:Security_Communication_RootCA2.pem
+#37 30.99 Adding debian:Starfield_Class_2_CA.pem
+#37 30.99 Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+#37 30.99 Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+#37 31.00 Adding debian:SwissSign_Gold_CA_-_G2.pem
+#37 31.00 Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+#37 31.01 Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+#37 31.01 Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+#37 31.01 Adding debian:TWCA_CYBER_Root_CA.pem
+#37 31.01 Adding debian:TWCA_Global_Root_CA.pem
+#37 31.02 Adding debian:TWCA_Root_Certification_Authority.pem
+#37 31.02 Adding debian:Telekom_Security_TLS_ECC_Root_2020.pem
+#37 31.02 Adding debian:Telekom_Security_TLS_RSA_Root_2023.pem
+#37 31.03 Adding debian:TeliaSonera_Root_CA_v1.pem
+#37 31.03 Adding debian:Telia_Root_CA_v2.pem
+#37 31.03 Adding debian:TrustAsia_Global_Root_CA_G3.pem
+#37 31.04 Adding debian:TrustAsia_Global_Root_CA_G4.pem
+#37 31.04 Adding debian:Trustwave_Global_Certification_Authority.pem
+#37 31.05 Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+#37 31.05 Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+#37 31.05 Adding debian:TunTrust_Root_CA.pem
+#37 31.05 Adding debian:UCA_Extended_Validation_Root.pem
+#37 31.06 Adding debian:UCA_Global_G2_Root.pem
+#37 31.06 Adding debian:USERTrust_ECC_Certification_Authority.pem
+#37 31.06 Adding debian:USERTrust_RSA_Certification_Authority.pem
+#37 31.07 Adding debian:XRamp_Global_CA_Root.pem
+#37 31.07 Adding debian:certSIGN_ROOT_CA.pem
+#37 31.08 Adding debian:certSIGN_Root_CA_G2.pem
+#37 31.08 Adding debian:e-Szigno_Root_CA_2017.pem
+#37 31.08 Adding debian:ePKI_Root_Certification_Authority.pem
+#37 31.08 Adding debian:emSign_ECC_Root_CA_-_C3.pem
+#37 31.08 Adding debian:emSign_ECC_Root_CA_-_G3.pem
+#37 31.09 Adding debian:emSign_Root_CA_-_C1.pem
+#37 31.09 Adding debian:emSign_Root_CA_-_G1.pem
+#37 31.09 Adding debian:vTrus_ECC_Root_CA.pem
+#37 31.10 Adding debian:vTrus_Root_CA.pem
+#37 31.14 done.
+#37 31.15 Setting up openjdk-21-jre:amd64 (21.0.8+9-1) ...
+#37 31.16 Setting up default-jre-headless (2:1.21-76) ...
+#37 31.17 Setting up default-jre (2:1.21-76) ...
+#37 31.18 Processing triggers for libc-bin (2.41-12) ...
+#37 DONE 31.6s
+
+#38 [jupyter 8/8] WORKDIR /user/app
+#38 DONE 0.0s
+
+#39 [jupyter] exporting to image
+#39 exporting layers
+#39 exporting layers 15.8s done
+#39 writing image sha256:36475693b6eb98725ce208a5f650eb9ad25249b8cf1c066e97b132398d61e68e done
+#39 naming to docker.io/library/bigdataarquitectura-jupyter done
+#39 DONE 15.9s
+
+#40 [jupyter] resolving provenance for metadata file
+#40 DONE 0.0s
+Attaching to jupyter-1, mysql-1, datanode, hive-metastore, hive-metastore-postgresql, hive-server, namenode, spark-master, spark-worker
+mysql-1                    | 2025-09-15 04:22:24+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.4.0-1.el9 started.
+namenode                   | Configuring core
+datanode                   | Configuring core
+datanode                   |  - Setting hadoop.proxyuser.hue.hosts=*
+namenode                   |  - Setting hadoop.proxyuser.hue.hosts=*
+datanode                   |  - Setting fs.defaultFS=hdfs://namenode:8020
+namenode                   |  - Setting fs.defaultFS=hdfs://namenode:8020
+namenode                   |  - Setting hadoop.proxyuser.hue.groups=*
+namenode                   |  - Setting hadoop.http.staticuser.user=root
+datanode                   |  - Setting hadoop.proxyuser.hue.groups=*
+namenode                   | Configuring hdfs
+datanode                   |  - Setting hadoop.http.staticuser.user=root
+datanode                   | Configuring hdfs
+namenode                   |  - Setting dfs.namenode.name.dir=file:///hadoop/dfs/name
+datanode                   |  - Setting dfs.datanode.data.dir=file:///hadoop/dfs/data
+namenode                   |  - Setting dfs.permissions.enabled=false
+datanode                   |  - Setting dfs.permissions.enabled=false
+namenode                   |  - Setting dfs.webhdfs.enabled=true
+namenode                   | Configuring yarn
+datanode                   |  - Setting dfs.webhdfs.enabled=true
+namenode                   |  - Setting yarn.resourcemanager.fs.state-store.uri=/rmstate
+datanode                   | Configuring yarn
+namenode                   |  - Setting yarn.timeline-service.generic-application-history.enabled=true
+datanode                   |  - Setting yarn.resourcemanager.fs.state-store.uri=/rmstate
+datanode                   |  - Setting yarn.timeline-service.generic-application-history.enabled=true
+namenode                   |  - Setting yarn.resourcemanager.recovery.enabled=true
+datanode                   |  - Setting yarn.resourcemanager.recovery.enabled=true
+namenode                   |  - Setting yarn.timeline-service.enabled=true
+datanode                   |  - Setting yarn.log-aggregation-enable=true
+namenode                   |  - Setting yarn.log-aggregation-enable=true
+datanode                   |  - Setting yarn.timeline-service.enabled=true
+namenode                   |  - Setting yarn.resourcemanager.store.class=org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore
+datanode                   |  - Setting yarn.resourcemanager.store.class=org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore
+namenode                   |  - Setting yarn.resourcemanager.system-metrics-publisher.enabled=true
+datanode                   |  - Setting yarn.resourcemanager.system-metrics-publisher.enabled=true
+namenode                   |  - Setting yarn.nodemanager.remote-app-log-dir=/app-logs
+datanode                   |  - Setting yarn.nodemanager.remote-app-log-dir=/app-logs
+namenode                   |  - Setting yarn.resourcemanager.resource.tracker.address=resourcemanager:8031
+datanode                   |  - Setting yarn.resourcemanager.resource.tracker.address=resourcemanager:8031
+namenode                   |  - Setting yarn.resourcemanager.hostname=resourcemanager
+datanode                   |  - Setting yarn.resourcemanager.hostname=resourcemanager
+namenode                   |  - Setting yarn.timeline-service.hostname=historyserver
+datanode                   |  - Setting yarn.timeline-service.hostname=historyserver
+namenode                   |  - Setting yarn.log.server.url=http://historyserver:8188/applicationhistory/logs/
+datanode                   |  - Setting yarn.log.server.url=http://historyserver:8188/applicationhistory/logs/
+namenode                   |  - Setting yarn.resourcemanager.scheduler.address=resourcemanager:8030
+datanode                   |  - Setting yarn.resourcemanager.scheduler.address=resourcemanager:8030
+namenode                   |  - Setting yarn.resourcemanager.address=resourcemanager:8032
+datanode                   |  - Setting yarn.resourcemanager.address=resourcemanager:8032
+namenode                   | Configuring httpfs
+namenode                   | Configuring kms
+namenode                   | Configuring mapred
+namenode                   | Configuring for multihomed network
+datanode                   | Configuring httpfs
+datanode                   | Configuring kms
+datanode                   | Configuring mapred
+datanode                   | Configuring for multihomed network
+hive-metastore             | Configuring core
+hive-metastore             |  - Setting hadoop.proxyuser.hue.hosts=*
+hive-metastore             |  - Setting fs.defaultFS=hdfs://namenode:8020
+hive-metastore             |  - Setting hadoop.proxyuser.hue.groups=*
+hive-metastore             |  - Setting hadoop.http.staticuser.user=root
+namenode                   | Formatting namenode name directory: /hadoop/dfs/name
+hive-metastore             | Configuring hdfs
+hive-metastore             |  - Setting dfs.permissions.enabled=false
+hive-metastore             |  - Setting dfs.webhdfs.enabled=true
+hive-metastore             | Configuring yarn
+hive-metastore             |  - Setting yarn.resourcemanager.fs.state-store.uri=/rmstate
+hive-metastore             |  - Setting yarn.timeline-service.generic-application-history.enabled=true
+hive-metastore             |  - Setting yarn.resourcemanager.recovery.enabled=true
+hive-metastore             |  - Setting yarn.timeline-service.enabled=true
+datanode                   | [1/100] check for namenode:50070...
+datanode                   | [1/100] namenode:50070 is not available yet
+datanode                   | [1/100] try in 5s once again ...
+hive-metastore             |  - Setting yarn.log-aggregation-enable=true
+hive-metastore             |  - Setting yarn.resourcemanager.store.class=org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore
+hive-metastore             |  - Setting yarn.resourcemanager.system-metrics-publisher.enabled=true
+hive-metastore             |  - Setting yarn.nodemanager.remote-app-log-dir=/app-logs
+hive-metastore             |  - Setting yarn.resourcemanager.resource.tracker.address=resourcemanager:8031
+hive-metastore             |  - Setting yarn.resourcemanager.hostname=resourcemanager
+hive-server                | Configuring core
+hive-metastore-postgresql  | The files belonging to this database system will be owned by user "postgres".
+hive-metastore-postgresql  | This user must also own the server process.
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  | The database cluster will be initialized with locale "en_US.utf8".
+hive-metastore-postgresql  | The default database encoding has accordingly been set to "UTF8".
+hive-metastore-postgresql  | The default text search configuration will be set to "english".
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  | Data page checksums are disabled.
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+hive-metastore-postgresql  | creating subdirectories ... ok
+hive-metastore             |  - Setting yarn.timeline-service.hostname=historyserver
+hive-server                |  - Setting hadoop.proxyuser.hue.hosts=*
+hive-metastore             |  - Setting yarn.log.server.url=http://historyserver:8188/applicationhistory/logs/
+hive-metastore-postgresql  | selecting default max_connections ... 100
+hive-metastore             |  - Setting yarn.resourcemanager.scheduler.address=resourcemanager:8030
+hive-server                |  - Setting fs.defaultFS=hdfs://namenode:8020
+hive-metastore             |  - Setting yarn.resourcemanager.address=resourcemanager:8032
+hive-server                |  - Setting hadoop.proxyuser.hue.groups=*
+hive-metastore-postgresql  | selecting default shared_buffers ... 128MB
+hive-metastore-postgresql  | selecting dynamic shared memory implementation ... posix
+hive-metastore             | Configuring httpfs
+hive-server                |  - Setting hadoop.http.staticuser.user=root
+hive-server                | Configuring hdfs
+hive-metastore             | Configuring kms
+hive-metastore             | Configuring mapred
+hive-server                |  - Setting dfs.permissions.enabled=false
+hive-metastore             | Configuring hive
+hive-server                |  - Setting dfs.webhdfs.enabled=true
+hive-metastore             |  - Setting hive.metastore.uris=thrift://hive-metastore:9083
+hive-server                | Configuring yarn
+hive-metastore             |  - Setting datanucleus.autoCreateSchema=false
+hive-server                |  - Setting yarn.resourcemanager.fs.state-store.uri=/rmstate
+hive-metastore             |  - Setting javax.jdo.option.ConnectionURL=jdbc:postgresql://hive-metastore-postgresql/metastore
+hive-server                |  - Setting yarn.timeline-service.generic-application-history.enabled=true
+hive-metastore             |  - Setting javax.jdo.option.ConnectionDriverName=org.postgresql.Driver
+hive-metastore             |  - Setting javax.jdo.option.ConnectionPassword=hive
+hive-server                |  - Setting yarn.resourcemanager.recovery.enabled=true
+hive-server                |  - Setting yarn.timeline-service.enabled=true
+hive-metastore             |  - Setting javax.jdo.option.ConnectionUserName=hive
+hive-metastore             | Configuring for multihomed network
+hive-server                |  - Setting yarn.log-aggregation-enable=true
+hive-server                |  - Setting yarn.resourcemanager.store.class=org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore
+hive-server                |  - Setting yarn.resourcemanager.system-metrics-publisher.enabled=true
+hive-server                |  - Setting yarn.nodemanager.remote-app-log-dir=/app-logs
+hive-server                |  - Setting yarn.resourcemanager.resource.tracker.address=resourcemanager:8031
+hive-server                |  - Setting yarn.resourcemanager.hostname=resourcemanager
+hive-metastore             | [1/100] check for namenode:50070...
+hive-metastore             | [1/100] namenode:50070 is not available yet
+hive-metastore             | [1/100] try in 5s once again ...
+hive-server                |  - Setting yarn.timeline-service.hostname=historyserver
+hive-server                |  - Setting yarn.log.server.url=http://historyserver:8188/applicationhistory/logs/
+hive-server                |  - Setting yarn.resourcemanager.scheduler.address=resourcemanager:8030
+hive-server                |  - Setting yarn.resourcemanager.address=resourcemanager:8032
+hive-server                | Configuring httpfs
+hive-server                | Configuring kms
+hive-server                | Configuring mapred
+hive-server                | Configuring hive
+hive-server                |  - Setting hive.metastore.uris=thrift://hive-metastore:9083
+hive-server                |  - Setting datanucleus.autoCreateSchema=false
+hive-server                |  - Setting javax.jdo.option.ConnectionURL=jdbc:postgresql://hive-metastore-postgresql/metastore
+hive-server                |  - Setting javax.jdo.option.ConnectionDriverName=org.postgresql.Driver
+hive-server                |  - Setting javax.jdo.option.ConnectionPassword=hive
+mysql-1                    | 2025-09-15 04:22:29+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+hive-server                |  - Setting javax.jdo.option.ConnectionUserName=hive
+hive-server                | Configuring for multihomed network
+hive-metastore-postgresql  | creating configuration files ... ok
+mysql-1                    | 2025-09-15 04:22:29+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.4.0-1.el9 started.
+hive-server                | [1/100] check for hive-metastore:9083...
+hive-server                | [1/100] hive-metastore:9083 is not available yet
+hive-server                | [1/100] try in 5s once again ...
+mysql-1                    | 2025-09-15 04:22:30+00:00 [Note] [Entrypoint]: Initializing database files
+hive-metastore-postgresql  | creating template1 database in /var/lib/postgresql/data/base/1 ... ok
+hive-metastore-postgresql  | initializing pg_authid ... ok
+hive-metastore-postgresql  | initializing dependencies ... ok
+datanode                   | [2/100] check for namenode:50070...
+datanode                   | [2/100] namenode:50070 is not available yet
+datanode                   | [2/100] try in 5s once again ...
+hive-metastore-postgresql  | creating system views ... ok
+hive-metastore-postgresql  | loading system objects' descriptions ... ok
+hive-metastore-postgresql  | creating collations ... ok
+hive-metastore-postgresql  | creating conversions ... ok
+hive-metastore             | [2/100] check for namenode:50070...
+hive-metastore             | [2/100] namenode:50070 is not available yet
+hive-metastore             | [2/100] try in 5s once again ...
+hive-metastore-postgresql  | creating dictionaries ... ok
+hive-metastore-postgresql  | setting privileges on built-in objects ... ok
+hive-server                | [2/100] check for hive-metastore:9083...
+hive-server                | [2/100] hive-metastore:9083 is not available yet
+hive-server                | [2/100] try in 5s once again ...
+hive-metastore-postgresql  | creating information schema ... ok
+hive-metastore-postgresql  | loading PL/pgSQL server-side language ... ok
+hive-metastore-postgresql  | vacuuming database template1 ... ok
+spark-master               | 2025-09-15 04:22:35 INFO  Master:2566 - Started daemon with process name: 13@6e661e18c0d7
+spark-worker               | 2025-09-15 04:22:35 INFO  Worker:2566 - Started daemon with process name: 11@1906263e1d87
+spark-master               | 2025-09-15 04:22:36 INFO  SignalUtils:54 - Registered signal handler for TERM
+spark-master               | 2025-09-15 04:22:36 INFO  SignalUtils:54 - Registered signal handler for HUP
+spark-master               | 2025-09-15 04:22:36 INFO  SignalUtils:54 - Registered signal handler for INT
+spark-worker               | 2025-09-15 04:22:36 INFO  SignalUtils:54 - Registered signal handler for TERM
+spark-worker               | 2025-09-15 04:22:36 INFO  SignalUtils:54 - Registered signal handler for HUP
+spark-worker               | 2025-09-15 04:22:36 INFO  SignalUtils:54 - Registered signal handler for INT
+hive-metastore-postgresql  | copying template1 to template0 ... ok
+hive-metastore-postgresql  | copying template1 to postgres ... ok
+datanode                   | [3/100] check for namenode:50070...
+datanode                   | [3/100] namenode:50070 is not available yet
+datanode                   | [3/100] try in 5s once again ...
+hive-metastore-postgresql  | syncing data to disk ... ok
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  | Success. You can now start the database server using:
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+hive-metastore-postgresql  | 
+hive-metastore             | [3/100] check for namenode:50070...
+hive-metastore             | [3/100] namenode:50070 is not available yet
+hive-metastore             | [3/100] try in 5s once again ...
+namenode                   | Formatting using clusterid: CID-b335b82f-f5d7-439a-8ab3-fa7fe815df38
+hive-metastore-postgresql  | waiting for server to start....LOG:  database system was shut down at 2025-09-15 04:22:36 UTC
+hive-metastore-postgresql  | LOG:  MultiXact member wraparound protections are now enabled
+hive-metastore-postgresql  | LOG:  database system is ready to accept connections
+hive-metastore-postgresql  | LOG:  autovacuum launcher started
+hive-server                | [3/100] check for hive-metastore:9083...
+hive-server                | [3/100] hive-metastore:9083 is not available yet
+hive-server                | [3/100] try in 5s once again ...
+hive-metastore-postgresql  |  done
+hive-metastore-postgresql  | server started
+spark-worker               | 2025-09-15 04:22:39 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+spark-master               | 2025-09-15 04:22:39 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+hive-metastore-postgresql  | ALTER ROLE
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  | /docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init-user-db.sh
+hive-metastore-postgresql  | CREATE ROLE
+hive-metastore-postgresql  | CREATE DATABASE
+hive-metastore-postgresql  | GRANT
+spark-master               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - Changing view acls to: root
+hive-metastore-postgresql  | You are now connected to database "metastore" as user "postgres".
+spark-master               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - Changing modify acls to: root
+hive-metastore-postgresql  | SET
+hive-metastore-postgresql  | SET
+hive-metastore-postgresql  | SET
+hive-metastore-postgresql  | SET
+hive-metastore-postgresql  | SET
+hive-metastore-postgresql  | SET
+hive-metastore-postgresql  | SET
+hive-metastore-postgresql  | SET
+hive-metastore-postgresql  | SET
+spark-master               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - Changing view acls groups to: 
+spark-master               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - Changing modify acls groups to: 
+spark-master               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+spark-worker               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - Changing view acls to: root
+spark-worker               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - Changing modify acls to: root
+spark-worker               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - Changing view acls groups to: 
+spark-worker               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - Changing modify acls groups to: 
+spark-worker               | 2025-09-15 04:22:40 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+datanode                   | [4/100] check for namenode:50070...
+datanode                   | [4/100] namenode:50070 is not available yet
+datanode                   | [4/100] try in 5s once again ...
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+spark-worker               | 2025-09-15 04:22:42 INFO  Utils:54 - Successfully started service 'sparkWorker' on port 43871.
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | ALTER TABLE
+hive-metastore-postgresql  | REVOKE
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | INSERT 0 1
+spark-master               | 2025-09-15 04:22:43 INFO  Utils:54 - Successfully started service 'sparkMaster' on port 7077.
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | WARNING:  hash indexes are not WAL-logged and their use is discouraged
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | INSERT 0 1
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | WARNING:  hash indexes are not WAL-logged and their use is discouraged
+hive-metastore-postgresql  | CREATE INDEX
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | INSERT 0 1
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | INSERT 0 1
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | CREATE TABLE
+hive-metastore-postgresql  | Tuples only is on.
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+spark-master               | 2025-09-15 04:22:43 INFO  Master:54 - Starting Spark master at spark://6e661e18c0d7:7077
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+spark-master               | 2025-09-15 04:22:43 INFO  Master:54 - Running Spark version 2.4.0
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore             | [4/100] check for namenode:50070...
+hive-metastore             | [4/100] namenode:50070 is not available yet
+hive-metastore             | [4/100] try in 5s once again ...
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | GRANT
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  | LOG:  received fast shutdown request
+hive-metastore-postgresql  | LOG:  aborting any active transactions
+hive-metastore-postgresql  | LOG:  autovacuum launcher shutting down
+hive-metastore-postgresql  | waiting for server to shut down....LOG:  shutting down
+spark-master               | 2025-09-15 04:22:43 INFO  log:192 - Logging initialized @16428ms
+hive-metastore-postgresql  | LOG:  database system is shut down
+spark-worker               | 2025-09-15 04:22:44 INFO  Worker:54 - Starting Spark worker 172.27.1.11:43871 with 2 cores, 6.8 GB RAM
+spark-worker               | 2025-09-15 04:22:44 INFO  Worker:54 - Running Spark version 2.4.0
+spark-worker               | 2025-09-15 04:22:44 INFO  Worker:54 - Spark home: /spark
+spark-master               | 2025-09-15 04:22:44 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+hive-server                | [4/100] check for hive-metastore:9083...
+hive-server                | [4/100] hive-metastore:9083 is not available yet
+hive-server                | [4/100] try in 5s once again ...
+spark-master               | 2025-09-15 04:22:44 INFO  Server:419 - Started @17072ms
+spark-worker               | 2025-09-15 04:22:44 INFO  log:192 - Logging initialized @17122ms
+spark-master               | 2025-09-15 04:22:44 INFO  AbstractConnector:278 - Started ServerConnector@8959205{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+spark-master               | 2025-09-15 04:22:44 INFO  Utils:54 - Successfully started service 'MasterUI' on port 8080.
+hive-metastore-postgresql  |  done
+hive-metastore-postgresql  | server stopped
+hive-metastore-postgresql  | 
+hive-metastore-postgresql  | PostgreSQL init process complete; ready for start up.
+hive-metastore-postgresql  | 
+spark-worker               | 2025-09-15 04:22:44 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+spark-master               | 2025-09-15 04:22:44 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@39bc7a14{/app,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:44 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7c7e84f7{/app/json,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:44 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7b226e99{/,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:44 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3873e8f8{/json,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:44 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@30a28a3d{/static,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@62660cc2{/app/kill,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@12993f77{/driver/kill,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:45 INFO  MasterWebUI:54 - Bound MasterWebUI to 0.0.0.0, and started at http://6e661e18c0d7:8080
+spark-worker               | 2025-09-15 04:22:45 INFO  Server:419 - Started @17603ms
+spark-worker               | 2025-09-15 04:22:45 INFO  AbstractConnector:278 - Started ServerConnector@4cc6f417{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+spark-worker               | 2025-09-15 04:22:45 INFO  Utils:54 - Successfully started service 'WorkerUI' on port 8081.
+spark-worker               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@36e65611{/logPage,null,AVAILABLE,@Spark}
+spark-worker               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@67becc84{/logPage/json,null,AVAILABLE,@Spark}
+spark-worker               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4d7bf34a{/,null,AVAILABLE,@Spark}
+spark-worker               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@727278b3{/json,null,AVAILABLE,@Spark}
+spark-worker               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@63b94095{/static,null,AVAILABLE,@Spark}
+spark-worker               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@545d0734{/log,null,AVAILABLE,@Spark}
+spark-worker               | 2025-09-15 04:22:45 INFO  WorkerWebUI:54 - Bound WorkerWebUI to 0.0.0.0, and started at http://1906263e1d87:8081
+spark-worker               | 2025-09-15 04:22:45 INFO  Worker:54 - Connecting to master spark-master:7077...
+spark-worker               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@302e88ab{/metrics/json,null,AVAILABLE,@Spark}
+spark-worker               | 2025-09-15 04:22:45 INFO  TransportClientFactory:267 - Successfully created connection to spark-master/172.27.1.10:7077 after 250 ms (0 ms spent in bootstraps)
+spark-master               | 2025-09-15 04:22:45 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@57670329{/metrics/master/json,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:46 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6b553b1e{/metrics/applications/json,null,AVAILABLE,@Spark}
+spark-master               | 2025-09-15 04:22:46 INFO  Master:54 - I have been elected leader! New state: ALIVE
+datanode                   | [5/100] check for namenode:50070...
+datanode                   | [5/100] namenode:50070 is not available yet
+datanode                   | [5/100] try in 5s once again ...
+spark-master               | 2025-09-15 04:22:47 INFO  Master:54 - Registering worker 172.27.1.11:43871 with 2 cores, 6.8 GB RAM
+spark-worker               | 2025-09-15 04:22:47 INFO  Worker:54 - Successfully registered with master spark://6e661e18c0d7:7077
+hive-metastore             | [5/100] namenode:50070 is available.
+hive-metastore             | [1/100] check for datanode:50075...
+hive-metastore             | [1/100] datanode:50075 is not available yet
+hive-metastore             | [1/100] try in 5s once again ...
+hive-server                | [5/100] check for hive-metastore:9083...
+hive-server                | [5/100] hive-metastore:9083 is not available yet
+hive-server                | [5/100] try in 5s once again ...
+mysql-1                    | 2025-09-15 04:22:51+00:00 [Note] [Entrypoint]: Database files initialized
+mysql-1                    | 2025-09-15 04:22:51+00:00 [Note] [Entrypoint]: Starting temporary server
+datanode                   | [6/100] namenode:50070 is available.
+hive-metastore             | [2/100] check for datanode:50075...
+hive-metastore             | [2/100] datanode:50075 is not available yet
+hive-metastore             | [2/100] try in 5s once again ...
+hive-server                | [6/100] check for hive-metastore:9083...
+hive-server                | [6/100] hive-metastore:9083 is not available yet
+hive-server                | [6/100] try in 5s once again ...
+hive-metastore             | [3/100] datanode:50075 is available.
+hive-metastore             | [1/100] hive-metastore-postgresql:5432 is available.
+hive-metastore             | 2025-09-15 04:22:58: Starting Hive Metastore Server
+hive-server                | [7/100] check for hive-metastore:9083...
+hive-server                | [7/100] hive-metastore:9083 is not available yet
+hive-server                | [7/100] try in 5s once again ...
+hive-metastore             | 2025-09-15T04:23:01,963 INFO [main] org.apache.hadoop.hive.conf.HiveConf - Found configuration file file:/opt/hive/conf/hive-site.xml
+mysql-1                    | 2025-09-15 04:23:03+00:00 [Note] [Entrypoint]: Temporary server started.
+mysql-1                    | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+hive-server                | [8/100] check for hive-metastore:9083...
+hive-server                | [8/100] hive-metastore:9083 is not available yet
+hive-server                | [8/100] try in 5s once again ...
+hive-metastore             | 2025-09-15T04:23:04,715 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - STARTUP_MSG: 
+hive-metastore             | /************************************************************
+hive-metastore             | STARTUP_MSG: Starting HiveMetaStore
+hive-metastore             | STARTUP_MSG:   host = 411834cb771a/172.27.1.8
+hive-metastore             | STARTUP_MSG:   args = []
+hive-metastore             | STARTUP_MSG:   version = 2.3.2
+hive-metastore             | STARTUP_MSG:   classpath = /opt/hive/conf:/opt/hive/lib/HikariCP-2.5.1.jar:/opt/hive/lib/RoaringBitmap-0.5.18.jar:/opt/hive/lib/ST4-4.0.4.jar:/opt/hive/lib/accumulo-core-1.6.0.jar:/opt/hive/lib/accumulo-fate-1.6.0.jar:/opt/hive/lib/accumulo-start-1.6.0.jar:/opt/hive/lib/accumulo-trace-1.6.0.jar:/opt/hive/lib/activation-1.1.jar:/opt/hive/lib/aether-api-0.9.0.M2.jar:/opt/hive/lib/aether-connector-file-0.9.0.M2.jar:/opt/hive/lib/aether-connector-okhttp-0.0.9.jar:/opt/hive/lib/aether-impl-0.9.0.M2.jar:/opt/hive/lib/aether-spi-0.9.0.M2.jar:/opt/hive/lib/aether-util-0.9.0.M2.jar:/opt/hive/lib/aircompressor-0.3.jar:/opt/hive/lib/airline-0.7.jar:/opt/hive/lib/ant-1.6.5.jar:/opt/hive/lib/ant-1.9.1.jar:/opt/hive/lib/ant-launcher-1.9.1.jar:/opt/hive/lib/antlr-runtime-3.5.2.jar:/opt/hive/lib/antlr4-runtime-4.5.jar:/opt/hive/lib/asm-3.1.jar:/opt/hive/lib/asm-commons-3.1.jar:/opt/hive/lib/asm-tree-3.1.jar:/opt/hive/lib/avatica-1.8.0.jar:/opt/hive/lib/avatica-metrics-1.8.0.jar:/opt/hive/lib/avro-1.7.7.jar:/opt/hive/lib/bonecp-0.8.0.RELEASE.jar:/opt/hive/lib/bytebuffer-collections-0.2.5.jar:/opt/hive/lib/calcite-core-1.10.0.jar:/opt/hive/lib/calcite-druid-1.10.0.jar:/opt/hive/lib/calcite-linq4j-1.10.0.jar:/opt/hive/lib/classmate-1.0.0.jar:/opt/hive/lib/commons-cli-1.2.jar:/opt/hive/lib/commons-codec-1.4.jar:/opt/hive/lib/commons-collections-3.2.2.jar:/opt/hive/lib/commons-compiler-2.7.6.jar:/opt/hive/lib/commons-compress-1.9.jar:/opt/hive/lib/commons-dbcp-1.4.jar:/opt/hive/lib/commons-dbcp2-2.0.1.jar:/opt/hive/lib/commons-el-1.0.jar:/opt/hive/lib/commons-httpclient-3.0.1.jar:/opt/hive/lib/commons-io-2.4.jar:/opt/hive/lib/commons-lang-2.6.jar:/opt/hive/lib/commons-lang3-3.1.jar:/opt/hive/lib/commons-logging-1.2.jar:/opt/hive/lib/commons-math-2.2.jar:/opt/hive/lib/commons-math3-3.6.1.jar:/opt/hive/lib/commons-pool-1.5.4.jar:/opt/hive/lib/commons-pool2-2.2.jar:/opt/hive/lib/commons-vfs2-2.0.jar:/opt/hive/lib/compress-lzf-1.0.3.jar:/opt/hive/lib/config-magic-0.9.jar:/opt/hive/lib/curator-client-2.7.1.jar:/opt/hive/lib/curator-framework-2.7.1.jar:/opt/hive/lib/curator-recipes-2.7.1.jar:/opt/hive/lib/curator-x-discovery-2.11.0.jar:/opt/hive/lib/datanucleus-api-jdo-4.2.4.jar:/opt/hive/lib/datanucleus-core-4.1.17.jar:/opt/hive/lib/datanucleus-rdbms-4.1.19.jar:/opt/hive/lib/derby-10.10.2.0.jar:/opt/hive/lib/derbyclient-10.11.1.1.jar:/opt/hive/lib/derbynet-10.11.1.1.jar:/opt/hive/lib/disruptor-3.3.0.jar:/opt/hive/lib/dropwizard-metrics-hadoop-metrics2-reporter-0.1.2.jar:/opt/hive/lib/druid-api-0.9.2.jar:/opt/hive/lib/druid-common-0.9.2.jar:/opt/hive/lib/druid-console-0.0.2.jar:/opt/hive/lib/druid-hdfs-storage-0.9.2.jar:/opt/hive/lib/druid-processing-0.9.2.jar:/opt/hive/lib/druid-server-0.9.2.jar:/opt/hive/lib/eigenbase-properties-1.1.5.jar:/opt/hive/lib/emitter-0.3.6.jar:/opt/hive/lib/extendedset-1.3.10.jar:/opt/hive/lib/findbugs-annotations-1.3.9-1.jar:/opt/hive/lib/geoip2-0.4.0.jar:/opt/hive/lib/geronimo-annotation_1.0_spec-1.1.1.jar:/opt/hive/lib/geronimo-jaspic_1.0_spec-1.0.jar:/opt/hive/lib/geronimo-jta_1.1_spec-1.1.1.jar:/opt/hive/lib/google-http-client-jackson2-1.15.0-rc.jar:/opt/hive/lib/groovy-all-2.4.4.jar:/opt/hive/lib/gson-2.2.4.jar:/opt/hive/lib/guava-14.0.1.jar:/opt/hive/lib/guice-multibindings-4.1.0.jar:/opt/hive/lib/guice-servlet-4.1.0.jar:/opt/hive/lib/hbase-annotations-1.1.1.jar:/opt/hive/lib/hbase-client-1.1.1.jar:/opt/hive/lib/hbase-common-1.1.1-tests.jar:/opt/hive/lib/hbase-common-1.1.1.jar:/opt/hive/lib/hbase-hadoop-compat-1.1.1.jar:/opt/hive/lib/hbase-hadoop2-compat-1.1.1-tests.jar:/opt/hive/lib/hbase-hadoop2-compat-1.1.1.jar:/opt/hive/lib/hbase-prefix-tree-1.1.1.jar:/opt/hive/lib/hbase-procedure-1.1.1.jar:/opt/hive/lib/hbase-protocol-1.1.1.jar:/opt/hive/lib/hbase-server-1.1.1.jar:/opt/hive/lib/hibernate-validator-5.1.3.Final.jar:/opt/hive/lib/hive-accumulo-handler-2.3.2.jar:/opt/hive/lib/hive-beeline-2.3.2.jar:/opt/hive/lib/hive-cli-2.3.2.jar:/opt/hive/lib/hive-common-2.3.2.jar:/opt/hive/lib/hive-contrib-2.3.2.jar:/opt/hive/lib/hive-druid-handler-2.3.2.jar:/opt/hive/lib/hive-exec-2.3.2.jar:/opt/hive/lib/hive-hbase-handler-2.3.2.jar:/opt/hive/lib/hive-hcatalog-core-2.3.2.jar:/opt/hive/lib/hive-hcatalog-server-extensions-2.3.2.jar:/opt/hive/lib/hive-hplsql-2.3.2.jar:/opt/hive/lib/hive-jdbc-2.3.2.jar:/opt/hive/lib/hive-jdbc-handler-2.3.2.jar:/opt/hive/lib/hive-llap-client-2.3.2.jar:/opt/hive/lib/hive-llap-common-2.3.2-tests.jar:/opt/hive/lib/hive-llap-common-2.3.2.jar:/opt/hive/lib/hive-llap-ext-client-2.3.2.jar:/opt/hive/lib/hive-llap-server-2.3.2.jar:/opt/hive/lib/hive-llap-tez-2.3.2.jar:/opt/hive/lib/hive-metastore-2.3.2.jar:/opt/hive/lib/hive-serde-2.3.2.jar:/opt/hive/lib/hive-service-2.3.2.jar:/opt/hive/lib/hive-service-rpc-2.3.2.jar:/opt/hive/lib/hive-shims-0.23-2.3.2.jar:/opt/hive/lib/hive-shims-2.3.2.jar:/opt/hive/lib/hive-shims-common-2.3.2.jar:/opt/hive/lib/hive-shims-scheduler-2.3.2.jar:/opt/hive/lib/hive-storage-api-2.4.0.jar:/opt/hive/lib/hive-testutils-2.3.2.jar:/opt/hive/lib/hive-vector-code-gen-2.3.2.jar:/opt/hive/lib/htrace-core-3.1.0-incubating.jar:/opt/hive/lib/http-client-1.0.4.jar:/opt/hive/lib/httpclient-4.4.jar:/opt/hive/lib/httpcore-4.4.jar:/opt/hive/lib/icu4j-4.8.1.jar:/opt/hive/lib/irc-api-1.0-0014.jar:/opt/hive/lib/ivy-2.4.0.jar:/opt/hive/lib/jackson-annotations-2.6.0.jar:/opt/hive/lib/jackson-core-2.6.5.jar:/opt/hive/lib/jackson-databind-2.6.5.jar:/opt/hive/lib/jackson-dataformat-smile-2.4.6.jar:/opt/hive/lib/jackson-datatype-guava-2.4.6.jar:/opt/hive/lib/jackson-datatype-joda-2.4.6.jar:/opt/hive/lib/jackson-jaxrs-1.9.13.jar:/opt/hive/lib/jackson-jaxrs-base-2.4.6.jar:/opt/hive/lib/jackson-jaxrs-json-provider-2.4.6.jar:/opt/hive/lib/jackson-jaxrs-smile-provider-2.4.6.jar:/opt/hive/lib/jackson-module-jaxb-annotations-2.4.6.jar:/opt/hive/lib/jackson-xc-1.9.13.jar:/opt/hive/lib/jamon-runtime-2.3.1.jar:/opt/hive/lib/janino-2.7.6.jar:/opt/hive/lib/jasper-compiler-5.5.23.jar:/opt/hive/lib/jasper-runtime-5.5.23.jar:/opt/hive/lib/java-util-0.27.10.jar:/opt/hive/lib/javax.el-3.0.0.jar:/opt/hive/lib/javax.el-api-3.0.0.jar:/opt/hive/lib/javax.inject-1.jar:/opt/hive/lib/javax.jdo-3.2.0-m3.jar:/opt/hive/lib/javax.servlet-3.0.0.v201112011016.jar:/opt/hive/lib/javax.servlet-api-3.1.0.jar:/opt/hive/lib/javolution-5.5.1.jar:/opt/hive/lib/jboss-logging-3.1.3.GA.jar:/opt/hive/lib/jcodings-1.0.8.jar:/opt/hive/lib/jcommander-1.32.jar:/opt/hive/lib/jdbi-2.63.1.jar:/opt/hive/lib/jdo-api-3.0.1.jar:/opt/hive/lib/jersey-client-1.9.jar:/opt/hive/lib/jersey-guice-1.19.jar:/opt/hive/lib/jersey-server-1.14.jar:/opt/hive/lib/jettison-1.1.jar:/opt/hive/lib/jetty-6.1.26.jar:/opt/hive/lib/jetty-all-7.6.0.v20120127.jar:/opt/hive/lib/jetty-client-9.2.5.v20141112.jar:/opt/hive/lib/jetty-continuation-9.2.5.v20141112.jar:/opt/hive/lib/jetty-http-9.2.5.v20141112.jar:/opt/hive/lib/jetty-io-9.2.5.v20141112.jar:/opt/hive/lib/jetty-proxy-9.2.5.v20141112.jar:/opt/hive/lib/jetty-security-9.2.5.v20141112.jar:/opt/hive/lib/jetty-server-9.2.5.v20141112.jar:/opt/hive/lib/jetty-servlet-9.2.5.v20141112.jar:/opt/hive/lib/jetty-servlets-9.2.5.v20141112.jar:/opt/hive/lib/jetty-sslengine-6.1.26.jar:/opt/hive/lib/jetty-util-6.1.26.jar:/opt/hive/lib/jetty-util-9.2.5.v20141112.jar:/opt/hive/lib/jline-2.12.jar:/opt/hive/lib/joda-time-2.8.1.jar:/opt/hive/lib/joni-2.1.2.jar:/opt/hive/lib/jpam-1.1.jar:/opt/hive/lib/json-1.8.jar:/opt/hive/lib/json-path-2.1.0.jar:/opt/hive/lib/jsp-2.1-6.1.14.jar:/opt/hive/lib/jsp-api-2.0.jar:/opt/hive/lib/jsp-api-2.1-6.1.14.jar:/opt/hive/lib/jsp-api-2.1.jar:/opt/hive/lib/jsr305-3.0.0.jar:/opt/hive/lib/jta-1.1.jar:/opt/hive/lib/libfb303-0.9.3.jar:/opt/hive/lib/libthrift-0.9.3.jar:/opt/hive/lib/log4j-1.2-api-2.6.2.jar:/opt/hive/lib/log4j-api-2.6.2.jar:/opt/hive/lib/log4j-core-2.6.2.jar:/opt/hive/lib/log4j-jul-2.5.jar:/opt/hive/lib/log4j-slf4j-impl-2.6.2.jar:/opt/hive/lib/log4j-web-2.6.2.jar:/opt/hive/lib/lz4-1.3.0.jar:/opt/hive/lib/mail-1.4.1.jar:/opt/hive/lib/mapdb-1.0.8.jar:/opt/hive/lib/maven-aether-provider-3.1.1.jar:/opt/hive/lib/maven-model-3.1.1.jar:/opt/hive/lib/maven-model-builder-3.1.1.jar:/opt/hive/lib/maven-repository-metadata-3.1.1.jar:/opt/hive/lib/maven-scm-api-1.4.jar:/opt/hive/lib/maven-scm-provider-svn-commons-1.4.jar:/opt/hive/lib/maven-scm-provider-svnexe-1.4.jar:/opt/hive/lib/maven-settings-3.1.1.jar:/opt/hive/lib/maven-settings-builder-3.1.1.jar:/opt/hive/lib/maxminddb-0.2.0.jar:/opt/hive/lib/metrics-core-2.2.0.jar:/opt/hive/lib/metrics-core-3.1.0.jar:/opt/hive/lib/metrics-json-3.1.0.jar:/opt/hive/lib/metrics-jvm-3.1.0.jar:/opt/hive/lib/mysql-metadata-storage-0.9.2.jar:/opt/hive/lib/netty-3.6.2.Final.jar:/opt/hive/lib/netty-all-4.0.52.Final.jar:/opt/hive/lib/okhttp-1.0.2.jar:/opt/hive/lib/opencsv-2.3.jar:/opt/hive/lib/orc-core-1.3.3.jar:/opt/hive/lib/org.abego.treelayout.core-1.0.1.jar:/opt/hive/lib/paranamer-2.3.jar:/opt/hive/lib/parquet-hadoop-bundle-1.8.1.jar:/opt/hive/lib/pentaho-aggdesigner-algorithm-5.1.5-jhyde.jar:/opt/hive/lib/plexus-interpolation-1.19.jar:/opt/hive/lib/plexus-utils-3.0.15.jar:/opt/hive/lib/postgresql-9.4.1208.jre7.jar:/opt/hive/lib/postgresql-jdbc.jar:/opt/hive/lib/postgresql-metadata-storage-0.9.2.jar:/opt/hive/lib/protobuf-java-2.5.0.jar:/opt/hive/lib/regexp-1.3.jar:/opt/hive/lib/rhino-1.7R5.jar:/opt/hive/lib/server-metrics-0.2.8.jar:/opt/hive/lib/servlet-api-2.4.jar:/opt/hive/lib/servlet-api-2.5-6.1.14.jar:/opt/hive/lib/slider-core-0.90.2-incubating.jar:/opt/hive/lib/snappy-java-1.0.5.jar:/opt/hive/lib/spymemcached-2.11.7.jar:/opt/hive/lib/stax-api-1.0.1.jar:/opt/hive/lib/super-csv-2.2.0.jar:/opt/hive/lib/tempus-fugit-1.1.jar:/opt/hive/lib/tesla-aether-0.0.5.jar:/opt/hive/lib/transaction-api-1.1.jar:/opt/hive/lib/validation-api-1.1.0.Final.jar:/opt/hive/lib/velocity-1.5.jar:/opt/hive/lib/wagon-provider-api-2.4.jar:/opt/hive/lib/zookeeper-3.4.6.jar::/opt/hadoop-2.7.4/share/hadoop/tools/lib/hadoop-distcp-2.7.4.jar:/opt/hadoop-2.7.4/contrib/capacity-scheduler/*.jar:/etc/hadoop:/opt/hadoop-2.7.4/share/hadoop/common/lib/jsch-0.1.54.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jetty-sslengine-6.1.26.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/hadoop-annotations-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/hadoop-auth-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.4/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.4/share/hadoop/common/hadoop-common-2.7.4-tests.jar:/opt/hadoop-2.7.4/share/hadoop/common/hadoop-nfs-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/common/hadoop-common-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/hadoop-hdfs-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/hadoop-hdfs-2.7.4-tests.jar:/opt/hadoop-2.7.4/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-registry-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-common-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-client-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-server-common-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-api-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.4-tests.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.4.jar:/opt/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.4.jar
+hive-metastore             | STARTUP_MSG:   build = git://stakiar-MBP.local/Users/stakiar/Desktop/scratch-space/apache-hive -r 857a9fd8ad725a53bd95c1b2d6612f9b1155f44d; compiled by 'stakiar' on Thu Nov 9 09:11:39 PST 2017
+hive-metastore             | ************************************************************/
+hive-metastore             | 2025-09-15T04:23:04,808 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - Starting hive metastore on port 9083
+hive-metastore             | 2025-09-15T04:23:05,204 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - 0: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+mysql-1                    | 2025-09-15 04:23:07+00:00 [Note] [Entrypoint]: Creating database retail_db
+mysql-1                    | 
+mysql-1                    | 2025-09-15 04:23:07+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/data_warehouse_netflix.sql
+mysql-1                    | 
+mysql-1                    | 
+mysql-1                    | 2025-09-15 04:23:07+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/db_movies_neflix_transact.sql
+mysql-1                    | 
+mysql-1                    | 
+mysql-1                    | 2025-09-15 04:23:08+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/retail_db.sql
+hive-server                | [9/100] check for hive-metastore:9083...
+hive-server                | [9/100] hive-metastore:9083 is not available yet
+hive-server                | [9/100] try in 5s once again ...
+hive-metastore             | 2025-09-15T04:23:11,417 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - Added admin role in metastore
+hive-metastore             | 2025-09-15T04:23:11,425 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - Added public role in metastore
+hive-metastore             | 2025-09-15T04:23:11,459 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - No user is added in admin role, since config is empty
+hive-metastore             | 2025-09-15T04:23:11,667 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - Starting DB backed MetaStore Server with SetUGI enabled
+hive-metastore             | 2025-09-15T04:23:11,679 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - Started the new metaserver on port [9083]...
+hive-metastore             | 2025-09-15T04:23:11,679 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - Options.minWorkerThreads = 200
+hive-metastore             | 2025-09-15T04:23:11,679 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - Options.maxWorkerThreads = 1000
+hive-metastore             | 2025-09-15T04:23:11,679 INFO [main] org.apache.hadoop.hive.metastore.HiveMetaStore - TCP keepalive = true
+hive-server                | [10/100] hive-metastore:9083 is available.
+mysql-1                    | 
+mysql-1                    | 
+mysql-1                    | 2025-09-15 04:23:15+00:00 [Note] [Entrypoint]: Stopping temporary server
+mysql-1                    | 2025-09-15 04:23:17+00:00 [Note] [Entrypoint]: Temporary server stopped
+mysql-1                    | 
+mysql-1                    | 2025-09-15 04:23:17+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+mysql-1                    | 
+hive-server                | 2025-09-15 04:23:25: Starting HiveServer2
+hive-metastore             | 2025-09-15T04:23:30,973 INFO [pool-10-thread-2] org.apache.hadoop.hive.metastore.HiveMetaStore - 1: source:172.27.1.7 get_all_functions
+hive-metastore             | 2025-09-15T04:23:31,091 INFO [pool-10-thread-2] org.apache.hadoop.hive.metastore.HiveMetaStore - 1: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+hive-metastore             | 2025-09-15T04:23:31,268 INFO [pool-10-thread-2] org.apache.hadoop.hive.metastore.HiveMetaStore - 1: source:172.27.1.7 get_all_databases
+hive-metastore             | 2025-09-15T04:23:31,287 INFO [pool-10-thread-2] org.apache.hadoop.hive.metastore.HiveMetaStore - 1: source:172.27.1.7 get_all_tables: db=default
+hive-metastore             | 2025-09-15T04:23:31,317 INFO [pool-10-thread-2] org.apache.hadoop.hive.metastore.HiveMetaStore - 1: source:172.27.1.7 get_multi_table : db=default tbls=
+[Kjupyter-1 exited with code 0
+[Kjupyter-1 has been recreated
+[Kmysql-1 exited with code 0
+[Kmysql-1 has been recreated
+[Kdatanode exited with code 137
+[Kdatanode has been recreated
+mysql-1                    | 2025-09-15 05:59:07+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.4.0-1.el9 started.
+datanode                   |  - Setting hadoop.proxyuser.hue.hosts=*
+datanode                   |  - Setting fs.defaultFS=hdfs://namenode:8020
+datanode                   |  - Setting hadoop.proxyuser.hue.groups=*
+datanode                   |  - Setting hadoop.http.staticuser.user=root
+datanode                   | Configuring hdfs
+datanode                   |  - Setting dfs.datanode.data.dir=file:///hadoop/dfs/data
+datanode                   |  - Setting dfs.permissions.enabled=false
+datanode                   |  - Setting dfs.webhdfs.enabled=true
+datanode                   | Configuring yarn
+datanode                   |  - Setting yarn.resourcemanager.fs.state-store.uri=/rmstate
+datanode                   |  - Setting yarn.timeline-service.generic-application-history.enabled=true
+datanode                   |  - Setting yarn.resourcemanager.recovery.enabled=true
+datanode                   |  - Setting yarn.timeline-service.enabled=true
+datanode                   |  - Setting yarn.log-aggregation-enable=true
+datanode                   |  - Setting yarn.resourcemanager.store.class=org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore
+datanode                   |  - Setting yarn.resourcemanager.system-metrics-publisher.enabled=true
+datanode                   |  - Setting yarn.nodemanager.remote-app-log-dir=/app-logs
+datanode                   |  - Setting yarn.resourcemanager.resource.tracker.address=resourcemanager:8031
+datanode                   |  - Setting yarn.resourcemanager.hostname=resourcemanager
+datanode                   |  - Setting yarn.timeline-service.hostname=historyserver
+mysql-1                    | 2025-09-15 05:59:08+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+datanode                   |  - Setting yarn.log.server.url=http://historyserver:8188/applicationhistory/logs/
+mysql-1                    | 2025-09-15 05:59:08+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.4.0-1.el9 started.
+datanode                   |  - Setting yarn.resourcemanager.scheduler.address=resourcemanager:8030
+datanode                   |  - Setting yarn.resourcemanager.address=resourcemanager:8032
+datanode                   | Configuring httpfs
+datanode                   | Configuring kms
+datanode                   | Configuring mapred
+datanode                   | Configuring for multihomed network
+datanode                   | [1/100] namenode:50070 is available.
+mysql-1                    | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
