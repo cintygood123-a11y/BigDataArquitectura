@@ -9,12 +9,13 @@ sqoop import \
 --delete-target-dir > /tmp/log_customer.log
 
 sqoop import \
---connect "jdbc:mysql://10.0.1.132:3310/retail_db" \
+--connect "jdbc:mysql://mysql:3306/bd_judith" \
 --username=root \
 --password=root \
---table departments \
+--table student_mat \
+--split-by age \
 --as-textfile \
---target-dir=/user/datapath/datasets/departments \
+--target-dir=/user/raw/mysql/bd_judith/t_student_mat \
 --delete-target-dir > /tmp/log_departments.log
 
 sqoop import \
